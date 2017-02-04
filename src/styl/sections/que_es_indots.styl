@@ -1,0 +1,94 @@
+.about-cover
+  height calc(80vh - 78px)
+
+  h1
+    color white
+    font-size remify(36)
+    margin-bottom 1em
+
+.about-introduction
+  background white
+  font-size remify(16)
+  line-height 1.31
+  position relative
+  transform translateY(-40%)
+  center-block()
+  max-width 682px
+  padding-top remify(62)
+  border-radius 7px
+
+  p
+    center-block()
+    width 90%
+    max-width 506px
+    text-align center
+
+.about-logo
+  width remify(80)
+  position absolute
+  top 0
+  left 50%
+  transform translate(-50%, -67%)
+
+.about-content
+  background #f3f3f4
+  max-width 783px
+  center-block()
+
+  p
+    font-size remify(16)
+    line-height 1.5
+
+.about-content-top,
+.about-content-bottom
+  align-items center
+  display flex
+  justify-content space-between
+
+.about-content-top p
+  flex-basis 362px
+  margin-top remify(20)
+  margin-right remify(51)
+  margin-bottom 0
+
+.about-content-bottom p
+  align-self flex-end
+  margin-top remify(80)
+  flex-basis 570px
+  margin-left remify(74)
+
+.about-content-bottom
+  padding-bottom remify(108)
+
+.about-content-photo
+  width 447px
+  margin-left -121px
+
+.about-content-icon
+  width remify(170)
+  align-self flex-start
+  margin-right -60px
+
+@media screen and (max-width: 783px)
+  .about-content
+    padding-top remify(30)
+
+  .about-content-top,
+  .about-content-bottom
+    justify-content center
+    text-align center
+    flex-wrap wrap
+
+    p
+      margin 2.5em 0 0 0
+      flex-basis 86%
+      max-width 460px
+
+  .about-content-photo
+    margin-left 0
+    flex-basis 90%
+    max-width 380px
+    width 90%
+
+  .about-content-icon
+    margin remify(40) 100px 0 100px
