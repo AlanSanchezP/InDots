@@ -1,0 +1,311 @@
+.home-carousel
+  color white
+  height calc(95vh - 72px)
+
+  .item
+    height 100%
+    padding-bottom 4em
+
+  .item-div
+    width 80%
+    min-width 288px
+    text-align left
+
+  .item-content
+    max-width 344px
+
+  .item-title
+    font-size remify(39)
+
+  .item-text
+    font-size remify(18)
+    line-height 1.17
+    padding-bottom unit(38/18, 'em')
+    margin-top unit(19/18, 'em')
+
+  .indots-button
+    font-size remify(18)
+    padding 0.8em 1.2em
+
+.home-introduction
+  margin-top unit(89/18, 'em')
+  margin-bottom unit(127/18, 'em')
+  max-width 655px
+  text-align center
+  font-size remify(18)
+  width 90%
+  center-block()
+
+  p
+    line-height 1.17
+    padding-bottom unit(39/18, 'em')
+
+  .indots-button
+    font-size remify(17)
+    padding 1em 1.5em
+
+.home-gradient
+  background-image url(../img/bg-thumb/rectangle-4@3x.png)
+
+.home-gradient-logo-section
+  position relative
+  padding remify(120) 0 remify(74) 0
+
+.gradient-logo
+  position absolute
+  left 50%
+  top 0
+  transform translate(-50%, -38%)
+  width remify(110)
+
+.home-gradient-items
+  color white
+  display flex
+  align-items flex-start
+  justify-content space-around
+  flex-wrap wrap
+  width 90%
+  max-width 950px
+  text-align center
+  center-block()
+
+.home-gradient-item
+  flex-basis 23%
+  max-width 180px
+
+  img
+    height remify(38)
+
+  p
+    font-size remify(14)
+    margin-top unit(23/14, 'em')
+
+.top-courses
+  center-block()
+  text-align center
+  max-width 880px
+  width 90%
+  padding remify(70) 0 remify(105) 0
+
+  .courses-items
+    margin-top remify(16)
+
+.top-courses-title
+  font-size remify(22)
+  padding-bottom unit(33/22, 'em')
+
+.top-courses-text
+  font-size remify(18)
+  width 100%
+  max-width 655px
+  line-height 1.17
+  center-block()
+
+// Move to single file
+.courses-items
+  display flex
+  align-items flex-start
+  justify-content space-around
+  flex-wrap wrap
+
+.courses-item
+  background $lightgray
+  max-width 363px
+  flex-basis 100%
+  margin-top remify(71)
+
+.courses-item-title
+  font-size remify(22)
+  padding 0.5em 0.4em
+  font-weight $medium
+
+.courses-item-photo
+  height 266px
+
+.courses-item-title-author
+  display flex
+  justify-content space-between
+  align-items center
+  width 90%
+  margin-left 3%
+
+.courses-item-info
+  text-align left
+
+.courses-item-author-photo
+  box-sizing initial
+  simple-border('all', 3px, $lightgray)
+  margin-top -44px
+  width 88px
+
+.courses-item-introduction
+  font-size remify(15.5)
+  font-weight $light
+  flex-basis calc(100% - 108px)
+  padding-top 1em
+
+.courses-item-description
+  color $gray
+  font-weight $book
+  font-style italic
+  font-size remify(12)
+  margin-top 1.2em
+  padding-bottom 0.6em
+  width 88%
+  center-block()
+
+// End move
+
+.home-newsletter-div
+  center-block()
+  padding-top remify(63)
+  padding-bottom remify(63)
+  max-width 794px
+  width 100%
+
+.home-newsletter-title
+  color white
+  text-align center
+  font-weight $medium
+  font-size remify(18)
+  line-height 1.17
+  center-block()
+  max-width 552px
+
+#homepage-newsletter-form
+  display flex
+  justify-content space-between
+  margin-top remify(14)
+
+  .input-wrapper
+    margin-top remify(15)
+
+    &:not(:last-child)
+      flex-basis 312px
+
+    &:last-child
+      flex-basis 135px
+
+  .contact-input
+    font-size remify(17)
+    font-weight $normal
+
+  .indots-button
+    font-size remify(16)
+    padding 1.2em 1.75em
+
+.home-flash-indots
+  padding-top remify(67)
+
+  .flash-indots-title
+    font-size remify(28)
+
+  .flash-indots-icons
+    margin-top remify(43)
+
+  .flash-indots-instructions
+    margin-top unit(90/22, 'em')
+    max-width 545px
+
+  .flash-indots-items
+    margin-top remify(49)
+
+  .view-more
+    display inline-block
+    font-size remify(18)
+    padding unit(15/18, 'em') unit(52/18, 'em')
+    margin-top remify(91)
+    margin-bottom remify(73)
+
+.flash-indots-line
+  display block
+  height 1px
+  border none
+  margin-top remify(70)
+  simple-border('top', 1px, $lightergray)
+  center-block()
+  max-width 510px
+  width 80%
+
+// Move to single file
+.flash-indots
+  text-align center
+  center-block()
+  max-width 891px
+  width 90%
+
+.flash-indots-introduction
+  font-weight $heavy
+  font-size remify(22)
+
+.flash-indots-icons
+  display flex
+  flex-wrap wrap
+  max-width 670px
+  justify-content space-around
+  center-block()
+
+.flash-indots-icon-item
+  flex-basis 117px
+
+  &:first-child
+    img
+      height remify(32)
+      margin remify(5) 0 remify(11) 0
+
+  &:nth-child(2)
+    img
+      height remify(44)
+      margin 0 0 remify(4) 0
+
+  &:nth-child(3)
+    img
+      height remify(26)
+      margin remify(4) 0 remify(18) 0
+
+  &:nth-child(4)
+    img
+      height remify(35)
+      margin remify(3) 0 remify(10) 0
+
+  &.short
+    flex-basis 58px
+
+  img
+    display inline-block
+    transition transform 0.2s
+
+    &:hover
+      transform scale(1.3)
+
+  span
+    display block
+    font-size remify(14)
+
+.flash-indots-instructions
+  display block
+  center-block()
+  font-size remify(22)
+  line-height 0.95
+
+.flash-indots-items
+  display flex
+  justify-content space-around
+  flex-wrap wrap
+
+.flash-indots-item
+  background $lightgray
+  font-size remify(18)
+  margin-top 2em
+  width 272px
+
+.flash-indots-item-photo
+  height 264px
+
+.flash-indots-item-name
+  text-align center
+  min-height remify(80)
+
+  span
+    width 90%
+// End move

@@ -1,0 +1,78 @@
+footer
+  background $blue
+  color white
+  padding-top remify(60)
+  padding-bottom remify(65)
+
+.footer-div
+  display flex
+  align-items center
+  justify-content space-around
+  center-block()
+  flex-wrap wrap
+  max-width 1026px
+  width 90%
+
+.footer-logo
+  width remify(210)
+
+.footer-left-column
+  flex-basis 290px
+
+.footer-copyright-info
+  font-size remify(15)
+  margin-top 1.25em
+  font-weight $normal
+
+.footer-green-text
+  color $footergreen
+  font-weight $heavy
+  font-size remify(18)
+
+.footer-contact-info
+  margin-top remify(48)
+
+.footer-email-div
+  margin-top remify(11)
+
+.footer-right-column
+  simple-border('left', 1px, white)
+  padding-left 120px
+
+.footer-email-span,
+.footer-social-media-item
+  display inline-block
+  margin-left remify(9.5)
+  vertical-align middle
+
+.footer-social-media-item
+  color white
+
+  &::before
+    font-size 22px
+
+.footer-email-span
+  font-size remify(16)
+  font-weight $heavy
+
+#footer-newsletter-form
+  width 312px
+
+  .contact-input
+    background rgba(white, 0.5)
+    font-size remify(17)
+    margin-top unit(15/17, 'em')
+
+    &::placeholder
+      color white
+
+  .button-wrapper
+    text-align right
+    margin-top remify(22)
+
+  .indots-button
+    font-size remify(16)
+    padding unit(17/16, 'em') unit(23/16, 'em')
+
+.footer-newsletter-title
+  font-size remify(18)

@@ -1,0 +1,153 @@
+{% extends "partials/base.njk" %}
+
+{% block meta %}
+{% endblock %}
+
+{% block content %}
+<div class="home-carousel">
+  <div class="item vertical-center simple-parallax cover" style="background-image: url(img/slider/group@3x3.png)">
+    <div class="item-div">
+      <div class="item-content">
+        <h2 class="item-title">Conecta tu mundo</h2>
+        <p class="item-text">
+          Somos la plataforma en la que encuentras ideas, inspiración y herramientas para ampliar tu mente y tus conexiones.
+        </p>
+        <a href="#" class="indots-button light-blue">Nuestros cursos</a>
+      </div>
+    </div>
+  </div>
+  <div class="controls">
+
+  </div>
+</div>
+<div class="home-introduction">
+  <p>
+    A través de los cursos de InDots vas a encontrar herramientas para desarrollar tus pasiones y tu potencial a través de material multimedia, artículos y cursos en línea, contribuyendo a que vivas de una forma más plena.
+  </p>
+  <a href="#" class="indots-button blue">Nuestros cursos</a>
+</div>
+<div class="home-gradient cover home-gradient-logo-section">
+  <img src="/img/logo/imago-indots-01-01@3x.png" alt="Logo" class="gradient-logo" />
+  <div class="home-gradient-items">
+    <div class="home-gradient-item">
+      <img src="/img/icons/s-t-a-r@3x.png" alt="Icono" />
+      <p>
+        Métodos efectivos para crear nuevas habilidades
+      </p>
+    </div>
+    <div class="home-gradient-item">
+      <img src="/img/icons/r-o-c-k-e-t@3x.png" alt="Icono" />
+      <p>
+        Libertad y apertura para desarrollar las cualidades personales y el potencial personal
+      </p>
+    </div>
+    <div class="home-gradient-item">
+      <img src="/img/icons/c-o-m-p-u-t-e-r@3x.png" alt="Icono" />
+      <p>
+        Originalidad y vanguardia para ofrecer información relevante y actualizada
+      </p>
+    </div>
+    <div class="home-gradient-item">
+      <img src="/img/icons/d-i-p-l-o-m-a@3x.png" alt="Icono" />
+      <p>
+        Auto-evaluación y mejoras constantes a nuestros métodos y plataforma
+      </p>
+    </div>
+  </div>
+</div>
+<div class="top-courses">
+  <h2 class="top-courses-title">Cursos destacados</h2>
+  <p class="top-courses-text">
+    En Indots diseñamos con los mejores autores, experiencias para que aprendas los temas que más te interesan de manera rápida, sencilla y fácil de usar.
+  </p>
+  <div class="courses-items">
+    <div class="courses-item">
+      <h3 class="courses-item-title">Meditación y mindfulness</h3>
+      <div class="courses-item-photo cover" style="background-image: url(/img/thumbnails/inicio-group-5@3x.png)"></div>
+      <div class="courses-item-info">
+        <div class="courses-item-title-author">
+          <img src="/img/thumbnails/group-44@2x.png" alt="Foto" class="courses-item-author-photo circle" />
+          <span class="courses-item-introduction">¿Quieres aprender y practicar la meditación?</span>
+        </div>
+        <p class="courses-item-description">
+          Conoce técnicas para reducir tu nivel de estrés y ansiedad
+        </p>
+      </div>
+    </div>
+    <div class="courses-item">
+      <h3 class="courses-item-title">Curso de pareja</h3>
+      <div class="courses-item-photo cover" style="background-image: url(/img/thumbnails/inicio-group-12@3x.png)"></div>
+      <div class="courses-item-info">
+        <div class="courses-item-title-author">
+          <img src="/img/thumbnails/group-44-copy@2x.png" alt="Foto" class="courses-item-author-photo circle" />
+          <span class="courses-item-introduction">¿Te gustaría mejorar tu relación? ¿Quieres saber cómo relacionarte con tu pareja?</span>
+        </div>
+        <p class="courses-item-description">
+          Encuentra las claves para revivir y recuperar la relación con tu pareja
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="home-gradient newsletter-gradient">
+  <div class="home-newsletter-div">
+    <h2 class="home-newsletter-title">Suscríbete a nuestro Newsletter para enterarte de los nuevos cursos que puedes tomar:</h2>
+    <form id="homepage-newsletter-form" action=".">
+      <div class="input-wrapper">
+        <input type="text" class="contact-input" id="home_name" name="name" placeholder="Nombre">
+      </div>
+      <div class="input-wrapper">
+        <input type="email" class="contact-input" id="home_emial" name="email" placeholder="Correo electrónico">
+      </div>
+      <div class="input-wrapper">
+        <button class="indots-button blue" type="submit" name="submit">Inscribirme</button>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="flash-indots home-flash-indots">
+  <h2 class="flash-indots-title blue-title">Flash InDots</h2>
+  <span class="flash-indots-introduction">Cursos sin costo por correo ¡Inscríbete!</span>
+  <div class="flash-indots-icons">
+    <div class="flash-indots-icon-item">
+      <img src="/img/icons/r-e-a-d@3x.png" alt="Icono" />
+      <span>5 minutos de lectura al día</span>
+    </div>
+    <div class="flash-indots-icon-item">
+      <img src="/img/icons/group-21@3x.png" alt="Icono" />
+      <span>Los expertos a tu alcance</span>
+    </div>
+    <div class="flash-indots-icon-item short">
+      <img src="/img/icons/c-a-l-e-n-d-a-r@3x.png" alt="Icono" />
+      <span>5 días de curso</span>
+    </div>
+    <div class="flash-indots-icon-item short">
+      <img src="/img/icons/c-l-o-c-k@3x.png" alt="Icono" />
+      <span>1 curso a la vez</span>
+    </div>
+  </div>
+  <hr class="flash-indots-line">
+  <span class="flash-indots-instructions">Escoge un curso, recibe el tema cada mañana en tu correo, aprende, inspira y crece…</span>
+  <div class="flash-indots-items">
+    <div class="flash-indots-item">
+      <div class="flash-indots-item-photo cover" style="background-image: url(img/thumbnails/group-27@3x-new.png)"></div>
+      <div class="flash-indots-item-name vertical-center">
+        <span>Inteligencia emocional</span>
+      </div>
+    </div>
+    <div class="flash-indots-item">
+      <div class="flash-indots-item-photo cover" style="background-image: url(img/thumbnails/group-32@3x-new.png)"></div>
+      <div class="flash-indots-item-name vertical-center">
+        <span>Encuentra tu voz creativa</span>
+      </div>
+    </div>
+    <div class="flash-indots-item">
+      <div class="flash-indots-item-photo cover" style="background-image: url(/img/thumbnails/group-29@3x-new.png)"></div>
+      <div class="flash-indots-item-name vertical-center">
+        <span>Comunicación efectiva</span>
+      </div>
+    </div>
+  </div>
+  <a href="#" class="indots-button dark-green view-more">Ver más</a>
+</div>
+{% endblock %}
