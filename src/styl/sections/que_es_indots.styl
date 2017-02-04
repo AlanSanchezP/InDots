@@ -1,6 +1,10 @@
 .about-cover
   height calc(80vh - 78px)
 
+  @media screen and (orientation: portrait)
+    @media screen and (min-height: 400px)
+      max-height 76vw
+
   h1
     color white
     font-size remify(36)
@@ -92,3 +96,11 @@
 
   .about-content-icon
     margin remify(40) 100px 0 100px
+
+@media screen and (max-width: 682px)
+  .about-introduction
+    transform translateY(-10px)
+    padding-bottom remify(35)
+
+  .about-cover  h1
+    margin-bottom 0
