@@ -43,3 +43,59 @@ nav
 
     &:hover, &.active
       simple-border('bottom', 4px, $blue)
+
+@media screen and (max-width: 876px)
+  nav
+    justify-content space-between
+    height 56px
+    padding 0 18px
+
+    .mobile-logo-container
+      display block
+      center-block()
+      width 70%
+
+      img
+        width 100%
+
+    .menu-trigger
+      display block
+      float right
+      margin 18px 0
+      font-size 18px
+
+    .menu-container
+      background $blue
+      height 100vh
+      margin-right 0
+      overflow-y auto
+      position fixed
+      right -280px
+      top 0
+      transition right 0.2s
+      width 280px
+      padding-top 25px
+
+      &.active
+        right 0
+        box-shadow 0 0 10px $darkgray
+
+      .menu
+        margin-top 30px
+        text-align left
+        height auto
+
+      .menu-link
+        color white
+        display block
+        font-size remify(18)
+        margin-left 0 !important
+        height auto
+        line-height 1
+        padding 1em 2em
+        border none
+        simple-border('left', 4px, transparent)
+
+        &:hover, &:active, &.active
+          background lightness($blue, 30%)
+          simple-border('left', 4px, white)
