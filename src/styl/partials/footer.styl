@@ -35,9 +35,12 @@ footer
 .footer-email-div
   margin-top remify(11)
 
-.footer-right-column
-  simple-border('left', 1px, white)
-  padding-left 120px
+.footer-divider
+  display block
+  height 140px
+  background white
+  width 1px
+  border none
 
 .footer-email-span,
 .footer-social-media-item
@@ -76,3 +79,21 @@ footer
 
 .footer-newsletter-title
   font-size remify(18)
+
+@media screen and (max-width: 767px)
+  .footer-left-column,
+  .footer-right-column
+    flex-basis 100%
+    text-align center
+
+  #footer-newsletter-form
+    center-block()
+    width 90%
+
+    .button-wrapper
+      text-align center
+
+  .footer-divider
+    width 60%
+    height 1px
+    margin remify(50) auto
