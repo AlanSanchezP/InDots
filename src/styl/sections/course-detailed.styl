@@ -78,7 +78,43 @@
   text-align left
   font-weight $heavy
   font-size remify(18)
+  margin-top remify(12)
   line-height 1.22
 
 .course-green-text
   color #5b878a
+
+@media screen and (max-width: 1000px)
+  .course-top-info
+    transform "translateX(%s)" %s = remify(60)
+
+@media screen and (max-width: 960px)
+  .course-bottom-about
+    transform none
+
+@media screen and (max-width: 742px)
+  .course-cover > div
+    margin-top -10px
+
+  .course-top-info
+    top -10px
+    width "calc(100vw - %s)" %s = remify(60)
+    margin-bottom remify(60)
+
+  .course-green-text
+    display block
+
+  .course-bottom-data div:not(:first-child)
+    margin-top remify(8)
+
+@media screen and (max-width: 479px)
+  .course-top-info
+    transform none
+    width 100%
+    padding-left remify(42)
+    padding-top remify(110)
+
+  .course-top-author
+    top 0
+    left 50%
+    transform translate(-50%, -50%)
