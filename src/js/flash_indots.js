@@ -92,8 +92,13 @@
   }
 
   function onClick() {
+    function callback() {
+      carousel.resize();
+      modal.open();
+      carousel.off('afterChange.slick', callback);
+    }
+    carousel.on('afterChange.slick', callback);
     carousel.slick('slickGoTo', $(this).index());
-    modal.open();
   }
 
   if ($('.flash-indots-items').length) {
