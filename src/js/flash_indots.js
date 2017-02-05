@@ -2,11 +2,8 @@
   var modal = null,
     carousel = null;
 
-  function getItemHTML(itemData) {
-    var sendTo = '.',
-      hiddenName = 'name',
-      emailName = 'email',
-      htmlCode = '<div class="item">'
+  function getItemHTML(itemData, formInfo) {
+    var htmlCode = '<div class="item">'
     + '<div class="flash-indots-modal-item-photo cover" style="background-image: ' + itemData.cover + '"></div>'
     + '<div class="flash-indots-modal-item-data">'
     + '<h3 class="flash-indots-modal-item-title flash-indots-icon-title">' + itemData.title + '</h3>'
@@ -17,10 +14,10 @@
     + '<div><span class="flash-indots-green-text">Tiempo</span>' + itemData.lessonDuration + '</div>'
     + '<div><span class="flash-indots-green-text">Precio</span>' + itemData.price + '</div>'
     + '</div>'
-    + '<form class="flash-indots-modal-form" action="' + sendTo + '">'
-    + '<input type="hidden" name="' + hiddenName + '">'
+    + '<form id="flash-indots-modal-form_' + itemData.index + '" class="flash-indots-modal-form" action="' + formInfo.sendTo + '">'
+    + '<input type="hidden" name="' + formInfo.hiddenName + '">'
     + '<div class="input-wrapper">'
-    + '<input class="contact-input" type="email" id="email_flash_' + itemData.index + '" name="' + emailName + '" placeholder="Correo electrónico">'
+    + '<input class="contact-input" type="email" id="email-flash-indots_' + itemData.index + '" name="' + formInfo.emailName + '" placeholder="Correo electrónico">'
     + '</div>'
     + '<div class="button-wrapper"><button class="indots-button green" type="submit" name="submit">Inscribirme</div>'
     + '</form>'
@@ -31,16 +28,32 @@
 
   function forEachItem(index) {
     var itemData = {
-      cover: $(this).find('.flash-indots-item-photo').css('background-image').replace('\"', '\''),
-      title: $(this).find('.flash-indots-item-name span').text(),
-      description: $(this).attr('data-item-description'),
-      format: $(this).attr('data-item-format'),
-      duration: $(this).attr('data-item-duration'),
-      lessonDuration: $(this).attr('data-item-lesson-duration'),
-      price: $(this).attr('data-item-price'),
-      index: index
-    }
-    carousel.append(getItemHTML(itemData));
+        cover: $(this).find('.flash-indots-item-photo').css('background-image').replace('\"', '\''),
+        title: $(this).find('.flash-indots-item-name span').text(),
+        description: $(this).attr('data-item-description'),
+        format: $(this).attr('data-item-format'),
+        duration: $(this).attr('data-item-duration'),
+        lessonDuration: $(this).attr('data-item-lesson-duration'),
+        price: $(this).attr('data-item-price'),
+        index: index
+      },
+      formInfo = {
+        sendTo: '.',
+        emailName: 'email',
+        hidenName: 'name'
+      },
+      validationRules = {};
+    validationRules[formInfo.emailName] = {
+      required: true,
+      email: true
+    };
+    validationRules[formInfo.hidenName] = {
+      required: true
+    };
+    carousel.append(getItemHTML(itemData, formInfo));
+    carousel.find('#flash-indots-modal-form_' + index + '').validate({
+      rules: validationRules
+    });
   }
 
   function createCarousel() {
