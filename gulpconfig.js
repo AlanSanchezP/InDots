@@ -45,10 +45,10 @@ module.exports = {
   },
   outputs: {
     libs: function (extension) {
-      return package + '.libs.' + extension;
+      return package.toLowerCase() + '.libs.' + extension;
     },
     files: function (extension) {
-      return package + '.' + extension;
+      return package.toLowerCase() + '.' + extension;
     }
   }
 };
