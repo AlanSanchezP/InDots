@@ -114,13 +114,14 @@
 
     &::before
       font-size remify(40)
+      text-align right
 
 .flash-indots-modal-title
   color white
   font-size remify(38)
 
 .flash-indots-modal-header
-  max-width 783px
+  width 783px
   center-block()
   position relative
 
@@ -128,7 +129,7 @@
   margin-top remify(80)
 
 .flash-indots-carousel
-  max-width 783px
+  width 783px
   center-block()
 
   .slick-list,
@@ -220,6 +221,66 @@
   .indots-button
     font-size remify(16)
     padding remify(16.5) remify(25)
+
+@media screen and (max-width: 1000px)
+  .flash-indots-modal-header,
+  .flash-indots-carousel
+    width 86%
+
+  .flash-indots-carousel
+    .slick-prev
+      left remify(-10)
+
+    .slick-next
+      right remify(-10)
+
+  .flash-indots-modal-item-photo
+    height initial
+
+  .flash-indots-modal-form
+    flex-wrap wrap
+    width 100%
+
+    .input-wrapper,
+    .button-wrapper
+      flex-basis 100%
+
+    .button-wrapper
+      margin-top remify(15)
+      text-align center
+
+@media screen and (max-width: 820px)
+  .flash-indots-modal-item-photo
+    display none
+
+  .flash-indots-modal-item-data
+    flex-basis 100%
+    text-align center
+
+  .flash-indots-modal-item-info,
+  .flash-indots-modal-form
+    center-block()
+
+@media screen and (max-width: 767px)
+  .flash-indots-modal-body
+    margin-top remify(30)
+
+@media screen and (max-width: 479px)
+  .flash-indots-modal-header
+    width 90%
+
+  .flash-indots-carousel
+    width 75%
+
+  .flash-indots-modal-item-info
+    flex-wrap wrap
+    justify-content space-around
+
+    div
+      flex-basis 40%
+
+      &:nth-child(n + 3)
+        margin-top remify(20)
 
 @media screen and (max-width: 460px)
   .flash-indots-icon-item
