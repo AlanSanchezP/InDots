@@ -17,7 +17,8 @@
     "jquery": "^3.1.0",
     "jquery-validation": "jquery-validate#^1.15.1",
     "font-awesome": "fontawesome#^4.7.0",
-    "normalize-css": "^5.0.0"
+    "normalize-css": "^5.0.0",
+    "slick-carousel": "^1.6.0"
   },
   "resolutions": {
     "jquery": "^3.1.0"
@@ -27,6 +28,12 @@
       "main": [
         "./css/font-awesome.css",
         "./fonts/*"
+      ]
+    },
+    "slick-carousel": {
+      "main": [
+        "slick/slick.js",
+        "slick/slick.css"
       ]
     }
   }

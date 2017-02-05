@@ -5,7 +5,7 @@
 
 {% block content %}
 <div class="home-carousel">
-  <div class="item vertical-center simple-parallax cover" style="background-image: url(img/slider/group@3x3.png)">
+  <div class="item vertical-center cover" style="background-image: url(img/slider/group@3x3.png)">
     <div class="item-div">
       <div class="item-content">
         <h2 class="item-title">Conecta tu mundo</h2>
@@ -16,8 +16,16 @@
       </div>
     </div>
   </div>
-  <div class="controls">
-
+  <div class="item vertical-center cover" style="background-image: url(img/slider/group@3x3.png)">
+    <div class="item-div">
+      <div class="item-content">
+        <h2 class="item-title">Conecta tu mundo</h2>
+        <p class="item-text">
+          Somos la plataforma en la que encuentras ideas, inspiración y herramientas para ampliar tu mente y tus conexiones.
+        </p>
+        <a href="#" class="indots-button light-blue">Nuestros cursos</a>
+      </div>
+    </div>
   </div>
 </div>
 <div class="home-introduction">
@@ -150,4 +158,14 @@
   </div>
   <a href="#" class="indots-button dark-green view-more">Ver más</a>
 </div>
+{% endblock %}
+
+{% block js_inline %}
+<script type="text/javascript">
+  $('.home-carousel').slick({
+    infinite: false,
+    prevArrow: '<span class="slick-prev circle fa fa-angle-left"></span>',
+    nextArrow: '<span class="slick-next circle fa fa-angle-right"></span>'
+  });
+</script>
 {% endblock %}
