@@ -89,16 +89,19 @@
     carousel = $('[data-remodal-id="flash-indots-modal"] .flash-indots-carousel');
     $('.flash-indots-items .flash-indots-item').each(forEachItem);
     createCarousel();
+    $(document).on('opened', '[data-remodal-id="flash-indots-modal"]', function () {
+      carousel.resize();
+    });
   }
 
   function onClick() {
     function callback() {
-      carousel.resize();
       modal.open();
       carousel.off('afterChange.slick', callback);
     }
     carousel.on('afterChange.slick', callback);
     carousel.slick('slickGoTo', $(this).index());
+    carousel.resize();
   }
 
   if ($('.flash-indots-items').length) {
