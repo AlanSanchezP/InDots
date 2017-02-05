@@ -21,12 +21,23 @@
   <div class="course-bottom-about">
     <h2 class="course-about-title">Acerca del curso</h2>
     <div class="course-bottom-data">
-      <span class="course-green-text">Duración:</span> {% block courseduration %}{% endblock %}
-      <span class="course-green-text">Recomendaciones:</span> {% block courserecomendations %}{% endblock %}
-      <span class="course-green-text">Acerca de quien lo imparte:</span> {% block courseauthorabout %}{% endblock %}
-      <span class="course-green-text">Para qué te va a ayudar:</span> {% block coursehelpful %}{% endblock %}
-      <span class="course-green-text">Beneficios:</span> {% block coursebenefits %}{% endblock %}
+      <div>
+        <span class="course-green-text">Duración:</span> {% block courseduration %}{% endblock %}
+      </div>
+      <div>
+        <span class="course-green-text">Recomendaciones:</span> {% block courserecomendations %}{% endblock %}
+      </div>
+      <div>
+        <span class="course-green-text">Acerca de quien lo imparte:</span> {% block courseauthorabout %}{% endblock %}
+      </div>
+      <div>
+        <span class="course-green-text">Para qué te va a ayudar:</span> {% block coursehelpful %}{% endblock %}
+      </div>
+      <div>
+        <span class="course-green-text">Beneficios:</span> {% block coursebenefits %}{% endblock %}
+      </div>
     </div>
   </div>
+  <a href="#" class="indots-button blue">Inscribirme</a>
 </div>
 {% endblock %}
