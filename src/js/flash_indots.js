@@ -20,7 +20,7 @@
     + '<form class="flash-indots-modal-form" action="' + sendTo + '">'
     + '<input type="hidden" name="' + hiddenName + '">'
     + '<div class="input-wrapper">'
-    + '<input class="contact-input" type="email" id="email_flash_' + itemData.index + '" name="' + emailName + '" placeholder="Correo lectrónico">'
+    + '<input class="contact-input" type="email" id="email_flash_' + itemData.index + '" name="' + emailName + '" placeholder="Correo electrónico">'
     + '</div>'
     + '<div class="button-wrapper"><button class="indots-button green" type="submit" name="submit">Inscribirme</div>'
     + '</form>'

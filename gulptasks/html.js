@@ -21,7 +21,8 @@ gulp.task('build:html', function () {
       ext: '.html',
       inheritExtension: false,
       manageEnv: function (environment) {
-        environment.addGlobal('projectName', package);
+        environment.addGlobal('pageTitle', package);
+        environment.addGlobal('projectName', package.toLowerCase());
       }
     }))
     .pipe(gulp.dest(baseDir.root));

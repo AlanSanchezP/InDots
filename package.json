@@ -1,5 +1,5 @@
 {
-  "name": "indots",
+  "name": "InDots",
   "version": "0.1.0",
   "description": "",
   "scripts": {
@@ -33,7 +33,7 @@
     "gulp-data": "^1.2.1",
     "gulp-nunjucks-render": "^2.0.0",
     "portfinder": "^1.0.12",
-    "gulp-connect": "^5.0.0", 
+    "gulp-connect": "^5.0.0",
     "gulp-stylus": "^2.5.0",
     "stylus-iconfont": "^0.10.1",
     "autoprefixer-stylus": "^0.11.0",
