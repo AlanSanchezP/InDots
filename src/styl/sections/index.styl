@@ -160,21 +160,30 @@
 
 #homepage-newsletter-form
   margin-top remify(14)
+  display flex
+  justify-content space-between
+
+  .left
+    flex-basis unit(312*2 + 13, 'px')
 
   .inputs
     display flex
     justify-content space-between
+    flex-wrap wrap
+    width 100%
 
   .form-message
-    margin-top remify(15)
     text-align center
+
+    &.error, &.success
+      margin-top remify(18)
 
   .input-wrapper,
   .button-wrapper
     margin-top remify(15)
 
-    &:not(:last-child)
-      flex-basis 312px
+  .input-wrapper
+    flex-basis 312px
 
   .button-wrapper
     flex-basis 135px
@@ -231,6 +240,9 @@
     flex-wrap wrap
     justify-content center
 
+    .inputs
+      justify-content center
+
     .input-wrapper,
     .button-wrapper
       flex-basis 100% !important
@@ -238,6 +250,7 @@
 
     .button-wrapper
       text-align center
+      margin-top remify(20)
 
 @media screen and (max-width: 730px)
   .home-gradient-item
