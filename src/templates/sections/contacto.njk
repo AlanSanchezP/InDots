@@ -1,0 +1,37 @@
+{% extends "partials/base.njk" %}
+
+{% block meta %}
+{% endblock %}
+
+{% block title %}
+Contacto
+{% endblock %}
+
+{% block content %}
+<div class="contact-form-section">
+  <h1 class="blue-title">Contacto</h1>
+  <form id="contact-form" class="contact-form" action="." method="post">
+    <div class="input-wrapper input">
+      <input id="name" class="contact-input" type="text" name="name" placeholder="Nombre">
+    </div>
+    <div class="input-wrapper input">
+      <input id="email" class="contact-input" type="text" name="email" placeholder="Correo electrónico">
+    </div>
+    <div class="input-wrapper textarea">
+      <textarea id="message" class="contact-input" name="message" placeholder="Mensaje"></textarea>
+    </div>
+    <div class="form-message">
+    </div>
+    <div class="button-wrapper">
+      <button class="indots-button blue" type="submit" name="submit">Enviar</button>
+    </div>
+    <div class="loader indots-loader">
+      <div class="ball-pulse-sync">
+        <div class="blue"></div>
+        <div class="blue"></div>
+        <div class="blue"></div>
+      </div>
+    </div>
+  </form>
+</div>
+{% endblock %}
