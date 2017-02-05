@@ -1,9 +1,11 @@
 {% extends "partials/base.njk" %}
 
 {% block content %}
-<div class="course-cover cover" style="background-image: url({% block coursecover %}{% endblock %})">
-  <h1 class="course-title">{% block coursetitle %}{% endblock %}</h1>
-  <span class="course-subtitle">{% block coursesubtitle %}{% endblock %}</span>
+<div class="course-cover cover vertical-center" style="background-image: url({% block coursecover %}{% endblock %})">
+  <div>
+    <h1 class="course-title">{% block coursetitle %}{% endblock %}</h1>
+    <span class="course-subtitle">{% block coursesubtitle %}{% endblock %}</span>
+  </div>
 </div>
 <div class="course-top-info">
   <img src="{% block courseauthorphoto %}{% endblock %}" alt="Autor" class="course-top-author" />
