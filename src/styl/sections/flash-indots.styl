@@ -1,6 +1,12 @@
 .flash-indots-section
   padding-top remify(56)
 
+  .blue-title::before
+    height remify(42.2)
+    width remify(29)
+    margin-top remify(-10)
+    margin-right remify(8)
+
   .flash-indots-introduction
     margin-top 0.7em
 
@@ -120,6 +126,12 @@
   color white
   font-size remify(38)
 
+  &::before
+    height remify(42.2)
+    width remify(29)
+    margin-top remify(-10)
+    margin-right remify(8)
+
 .flash-indots-modal-header
   width 783px
   center-block()
@@ -171,6 +183,12 @@
   color $darkgray
   font-weight $heavy
   font-size remify(25)
+
+  &::before
+    height remify(33)
+    width remify(23)
+    margin-top remify(-10)
+    margin-right remify(10)
 
 .flash-indots-modal-item-photo
   flex-basis 297px
@@ -271,6 +289,10 @@
 
   .flash-indots-carousel
     width 75%
+
+  .flash-indots-modal-item-title::before
+    display none
+    content ''
 
   .flash-indots-modal-item-info
     flex-wrap wrap
