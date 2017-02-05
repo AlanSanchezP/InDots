@@ -37,15 +37,18 @@
   .item
     display flex
     height 100%
-    padding-bottom 4em
+    padding-bottom 7em
+    overflow hidden
 
     @media screen and (max-height: 400px)
-      padding-bottom 0
+      padding-bottom 3em
 
   .item-div
     width 80%
     min-width 288px
     text-align left
+    position relative
+    z-index 2
 
   .item-content
     max-width 344px
@@ -85,7 +88,7 @@
 
 .home-gradient-logo-section
   position relative
-  padding remify(120) 0 remify(74) 0
+  padding remify(90) 0 remify(74) 0
 
 .gradient-logo
   position absolute
@@ -93,6 +96,7 @@
   top 0
   transform translate(-50%, -38%)
   width remify(110)
+  z-index 3
 
 .home-gradient-items
   color white
@@ -103,6 +107,7 @@
   width 90%
   max-width 950px
   text-align center
+  z-index 2
   center-block()
 
 .home-gradient-item

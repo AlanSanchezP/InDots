@@ -6,7 +6,7 @@
 {% block content %}
 <div class="home-carousel">
   <div class="item vertical-center cover" style="background-image: url(img/slider/group@3x3.png)">
-    <div class="item-div">
+    <div class="item-div" data-enllax-type="foreground" data-enllax-ratio=".5">
       <div class="item-content">
         <h2 class="item-title">Conecta tu mundo</h2>
         <p class="item-text">
@@ -17,7 +17,7 @@
     </div>
   </div>
   <div class="item vertical-center cover" style="background-image: url(img/slider/group@3x3.png)">
-    <div class="item-div">
+    <div class="item-div" data-enllax-type="foreground" data-enllax-ratio=".5">
       <div class="item-content">
         <h2 class="item-title">Conecta tu mundo</h2>
         <p class="item-text">
@@ -36,7 +36,7 @@
 </div>
 <div class="home-gradient home-gradient-logo-section">
   <img src="/img/logo/imago-indots-01-01@3x.png" alt="Logo" class="gradient-logo" />
-  <div class="home-gradient-items">
+  <div class="home-gradient-items" data-enllax-type="foreground" data-enllax-ratio=".2">
     <div class="home-gradient-item">
       <img src="/img/icons/s-t-a-r@3x.png" alt="Icono" />
       <p>
@@ -167,5 +167,6 @@
     prevArrow: '<span class="slick-prev circle fa fa-angle-left"></span>',
     nextArrow: '<span class="slick-next circle fa fa-angle-right"></span>'
   });
+  $(window).enllax();
 </script>
 {% endblock %}
