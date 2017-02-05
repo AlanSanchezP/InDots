@@ -1,0 +1,30 @@
+{% extends "partials/base.njk" %}
+
+{% block content %}
+<div class="course-cover cover" style="background-image: url({% block coverurl %}{% endblock %})">
+  <h1 class="course-title">{% block coursetitle %}{% endblock %}</h1>
+  <span class="course-subtitle">{% block coursesubtitle %}{% endblock %}</span>
+</div>
+<div class="course-top-info">
+  <img src="{% block courseauthorphoto %}{% endblock %}" alt="Autor" class="course-top-author" />
+  <div class="course-top-data">
+    <span class="course-author-text">Curso impartido por {% block courseauthor %}{% endblock %}</span>
+    <p class="course-about-text">{% block courseabouttext %}{% endblock %}</p>
+  </div>
+</div>
+<div class="course-video-wrapper">
+  <iframe src="{% block coursevideo %}{% endblock %}"></iframe>
+</div>
+<div class="course-bottom-info">
+  <div class="course-bottom-about">
+    <h2 class="course-about-title">Acerca del curso</h2>
+    <div class="course-bottom-data">
+      <span class="course-green-text">Duración:</span> {% block courseduration %}{% endblock %}
+      <span class="course-green-text">Recomendaciones:</span> {% block courserecomendations %}{% endblock %}
+      <span class="course-green-text">Acerca de quien lo imparte:</span> {% block courseauthorabout %}{% endblock %}
+      <span class="course-green-text">Para qué te va a ayudar:</span> {% block coursehelpful %}{% endblock %}
+      <span class="course-green-text">Beneficios:</span> {% block coursebenefits %}{% endblock %}
+    </div>
+  </div>
+</div>
+{% endblock %}
