@@ -43,6 +43,13 @@
     carousel.append(getItemHTML(itemData));
   }
 
+  function createCarousel() {
+    carousel.slick({
+      prevArrow: '<span class="slick-prev circle fa fa-angle-left"></span>',
+      nextArrow: '<span class="slick-next circle fa fa-angle-right"></span>'
+    });
+  }
+
   function createModal() {
     var modalHTML = '<div class="remodal" data-remodal-id="flash-indots-modal">'
       + '<div class="flash-indots-modal-header">'
@@ -58,7 +65,7 @@
     modal = $('[data-remodal-id="flash-indots-modal"]').remodal();
     carousel = $('[data-remodal-id="flash-indots-modal"] .flash-indots-carousel');
     $('.flash-indots-items .flash-indots-item').each(forEachItem);
-    carousel.slick();
+    createCarousel();
   }
 
   function onClick() {

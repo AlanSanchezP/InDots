@@ -143,7 +143,6 @@
     position absolute
     height remify(43)
     top 50%
-    transform translateY(-50%)
     z-index 3
     width remify(43)
     text-align center
@@ -153,10 +152,12 @@
       line-height 1.35
 
   .slick-prev
-    left 3%
+    left remify(-33)
+    transform translate(-100%, -50%)
 
   .slick-next
-    right 3%
+    right remify(-33)
+    transform translate(100%, -50%)
 
   .slick-disabled
     display none !important
@@ -165,19 +166,60 @@
     background white
     display flex
 
-  .flash-indots-modal-item-title
-    color $darkgray
+.flash-indots-modal-item-title
+  color $darkgray
+  font-weight $heavy
+  font-size remify(25)
+
+.flash-indots-modal-item-photo
+  flex-basis 297px
+  height 287px
+
+.flash-indots-modal-item-data
+  align-self center
+  flex-basis calc(100% - 297px)
+  text-align left
+  padding remify(21) remify(31) remify(21) remify(37)
+
+.flash-indots-modal-item-description
+  color $gray1
+  font-weight $medium
+  font-size remify(14)
+  line-height 1.5
+  margin-top remify(16)
+
+.flash-indots-modal-item-info
+  display flex
+  max-width 320px
+  width 100%
+  justify-content space-between
+  margin-top remify(20)
+
+  div
+    font-size remify(16)
+    color $gray
+    flex-basis 60px
+    text-align center
+
+  .flash-indots-green-text
+    color $btngreen
+    display block
     font-weight $heavy
-    font-size remify(25)
+    font-size remify(17)
+    margin-bottom remify(7)
 
-  .flash-indots-modal-item-photo
-    flex-basis 297px
-    height 287px
+.flash-indots-modal-form
+  display flex
+  justify-content space-between
+  margin-top remify(23)
+  max-width 425px
 
-  .flash-indots-modal-item-data
-    flex-basis calc(100% - 297px)
-    text-align left
-    padding remify(21) remify(31) remify(21) remify(37)
+  .input-wrapper
+    flex-basis 278px
+
+  .indots-button
+    font-size remify(16)
+    padding remify(16.5) remify(25)
 
 @media screen and (max-width: 460px)
   .flash-indots-icon-item
