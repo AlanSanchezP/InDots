@@ -50,9 +50,10 @@ p
   text-align center
   width 100%
 
-  .ball-pulse-sync
+  &:not(.vertical-center) .ball-pulse-sync
     margin-top 30px
 
+  .ball-pulse-sync
     div:not(.blue)
       background $btngreen
 
@@ -64,7 +65,12 @@ button[type="submit"][disabled]
   display none
 
   & + .indots-loader
-    display block
+    &:not(.vertical-center)
+      display block
+
+    &.vertical-center
+      display flex
+      height 100%
 
 label.error
   color #ff3636

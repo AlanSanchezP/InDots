@@ -42,7 +42,9 @@
 
       fields.attr('disabled', 'disabled');
       formMessage.html('');
-      $(form).find('.button-wrapper').addClass('disabled');
+      if (!$(form).find('.button-wrapper .loader').length) {
+        $(form).find('.button-wrapper').addClass('disabled');
+      }
       $.ajax({
         url: $(form).attr('action'),
         method: 'POST',
@@ -82,6 +84,18 @@
       email: {
         required: true,
         email: true
+      }
+    }
+  });
+
+  $('#homepage-newsletter-form').validate({
+    rules: {
+      email: {
+        required: true,
+        email: true
+      },
+      name: {
+        required: true
       }
     }
   });
