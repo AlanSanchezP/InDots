@@ -100,6 +100,85 @@
   span
     width 90%
 
+[data-remodal-id="flash-indots-modal"]
+  width 100%
+  background transparent
+  max-width 965px
+  padding 0
+  center-block()
+
+  .remodal-close
+    right 0
+    left initial
+    color white
+
+    &::before
+      font-size remify(40)
+
+.flash-indots-modal-title
+  color white
+  font-size remify(38)
+
+.flash-indots-modal-header
+  max-width 783px
+  center-block()
+  position relative
+
+.flash-indots-modal-body
+  margin-top remify(80)
+
+.flash-indots-carousel
+  max-width 783px
+  center-block()
+
+  .slick-list,
+  .slick-track
+    height 100%
+
+  .slick-prev,
+  .slick-next
+    color white
+    cursor pointer
+    background $btngreen
+    position absolute
+    height remify(43)
+    top 50%
+    transform translateY(-50%)
+    z-index 3
+    width remify(43)
+    text-align center
+
+    &::before
+      font-size remify(30)
+      line-height 1.35
+
+  .slick-prev
+    left 3%
+
+  .slick-next
+    right 3%
+
+  .slick-disabled
+    display none !important
+
+  .item
+    background white
+    display flex
+
+  .flash-indots-modal-item-title
+    color $darkgray
+    font-weight $heavy
+    font-size remify(25)
+
+  .flash-indots-modal-item-photo
+    flex-basis 297px
+    height 287px
+
+  .flash-indots-modal-item-data
+    flex-basis calc(100% - 297px)
+    text-align left
+    padding remify(21) remify(31) remify(21) remify(37)
+
 @media screen and (max-width: 460px)
   .flash-indots-icon-item
     flex-basis 40% !important
