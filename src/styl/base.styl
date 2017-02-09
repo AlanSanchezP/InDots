@@ -13,13 +13,22 @@ html
   @media screen and (max-width: 480px)
     font-size 13px
 
-body.noscroll
-  overflow hidden
+body
+  color inherit
+  font-family inherit
+  font-weight inherit
+  font-size inherit
 
-  &::after
-    content ' '
-    opacity 1
-    z-index 9
+  .noscroll
+    overflow hidden
+
+    &::after
+      content ' '
+      opacity 1
+      z-index 9
+
+input, button, textarea
+  font-family inherit
 
 #page
   margin 0
