@@ -14,23 +14,11 @@
     }
   });
 
-  $('#footer-newsletter-form').validate({
+  $('#footer-newsletter-form, #homepage-newsletter-form').validate({
     rules: {
       email: {
         required: true,
         email: true
-      }
-    }
-  });
-
-  $('#homepage-newsletter-form').validate({
-    rules: {
-      email: {
-        required: true,
-        email: true
-      },
-      name: {
-        required: true
       }
     }
   });
