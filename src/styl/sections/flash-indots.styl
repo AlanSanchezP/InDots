@@ -229,19 +229,29 @@
 
 .flash-indots-modal-form
   display flex
-  justify-content space-between
+  justify-content center
+  flex-wrap wrap
   margin-top remify(23)
   max-width 425px
 
-  .input-wrapper
-    flex-basis 270px
+  .inputs-div
+    display flex
+    justify-content space-between
+    flex-wrap wrap
+    flex-basis 100%
 
-  .button-wrapper
-    min-width remify(136)
+  .input-wrapper
+    flex-basis calc(50% - 6px)
+    width initial
+
+  .form-message, [type="hidden"]
+    flex-basis 100%
+    text-align center
 
   .indots-button
     font-size remify(16)
     padding remify(16.5) remify(25)
+    margin-top remify(14)
 
 @media screen and (max-width: 1000px)
   .flash-indots-modal-header,
@@ -258,17 +268,14 @@
   .flash-indots-modal-item-photo
     height initial
 
-  .flash-indots-modal-form
-    flex-wrap wrap
-    width 100%
 
-    .input-wrapper,
-    .button-wrapper
+@media screen and (max-width: 860px)
+  .flash-indots-modal-form
+    .input-wrapper
       flex-basis 100%
 
-    .button-wrapper
-      margin-top remify(15)
-      text-align center
+      &:not(:first-of-type)
+        margin-top remify(10)
 
 @media screen and (max-width: 820px)
   .flash-indots-modal-item-photo

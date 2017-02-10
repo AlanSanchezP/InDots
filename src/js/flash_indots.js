@@ -15,9 +15,14 @@
     + '<div><span class="flash-indots-green-text">Precio</span>' + itemData.price + '</div>'
     + '</div>'
     + '<form id="flash-indots-modal-form_' + itemData.index + '" class="flash-indots-modal-form" action="' + formInfo.sendTo + '">'
+    + '<div class="inputs-div">'
     + '<input type="hidden" name="' + formInfo.hiddenName + '">'
     + '<div class="input-wrapper">'
+    + '<input class="contact-input" type="text" id="name-flash-indots_' + itemData.index + '" name="' + formInfo.textName + '" placeholder="Nombre">'
+    + '</div>'
+    + '<div class="input-wrapper">'
     + '<input class="contact-input" type="email" id="email-flash-indots_' + itemData.index + '" name="' + formInfo.emailName + '" placeholder="Correo electrónico">'
+    + '</div>'
     + '<div class="form-message"></div>'
     + '</div>'
     + '<div class="button-wrapper">'
@@ -50,7 +55,8 @@
       formInfo = {
         sendTo: '.',
         emailName: 'email',
-        hidenName: 'name'
+        hidenName: 'name',
+        textName: 'name'
       },
       validationRules = {};
     validationRules[formInfo.emailName] = {
@@ -58,6 +64,9 @@
       email: true
     };
     validationRules[formInfo.hidenName] = {
+      required: true
+    };
+    validationRules[formInfo.textName] = {
       required: true
     };
     carousel.append(getItemHTML(itemData, formInfo));
@@ -71,6 +80,12 @@
       prevArrow: '<span class="slick-prev circle fa fa-angle-left"></span>',
       nextArrow: '<span class="slick-next circle fa fa-angle-right"></span>'
     });
+  }
+
+  function carouselCallback() {
+    modal.open();
+    carousel.off('afterChange.slick', carouselCallback);
+    carousel.resize();
   }
 
   function createModal() {
@@ -89,19 +104,16 @@
     carousel = $('[data-remodal-id="flash-indots-modal"] .flash-indots-carousel');
     $('.flash-indots-items .flash-indots-item').each(forEachItem);
     createCarousel();
+
+    carousel.on('afterChange.slick', carouselCallback);
     $(document).on('opened', '[data-remodal-id="flash-indots-modal"]', function () {
       carousel.resize();
     });
   }
 
   function onClick() {
-    function callback() {
-      modal.open();
-      carousel.off('afterChange.slick', callback);
-    }
-    carousel.on('afterChange.slick', callback);
+    carousel.on('afterChange.slick', carouselCallback);
     carousel.slick('slickGoTo', $(this).index());
-    carousel.resize();
   }
 
   if ($('.flash-indots-items').length) {
