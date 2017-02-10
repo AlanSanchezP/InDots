@@ -107,7 +107,7 @@
 
     carousel.on('afterChange.slick', carouselCallback);
     $(document).on('opened', '[data-remodal-id="flash-indots-modal"]', function () {
-      carousel.resize();
+      carousel.slick('setPosition');
     });
   }
 
