@@ -14,7 +14,7 @@
     }
   });
 
-  $('#footer-newsletter-form, #homepage-newsletter-form').validate({
+  $('#footer-newsletter-form, #homepage-newsletter-form, #blog-newsletter-form').validate({
     rules: {
       email: {
         required: true,

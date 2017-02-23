@@ -1,0 +1,62 @@
+{% extends "partials/base.njk" %}
+
+{% block meta %}
+{% endblock %}
+
+{% block title %}
+Blog
+{% endblock %}
+
+{% block content %}
+<div class="blog-section">
+  <h1 class="blue-title">Blog</h1>
+  <div class="blog-wrapper">
+    <section class="blog-articles-column">
+      <article class="blog-article">
+        <a href="#"><div class="blog-article-cover"></div></a>
+        <a href="#" class="blog-article-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
+        <span class="blog-article-date">21 de noviembre de 2016</span>
+        <p class="blog-article-excerpt">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea...
+        </p>
+        <a class="blog-article-link go-to-article" href="#">Seguir leyendo</a>
+      </article>
+      <article class="blog-article">
+        <a href="#"><div class="blog-article-cover"></div></a>
+        <a href="#" class="blog-article-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
+        <span class="blog-article-date">21 de noviembre de 2016</span>
+        <p class="blog-article-excerpt">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea...
+        </p>
+        <a class="blog-article-link go-to-article" href="#">Seguir leyendo</a>
+      </article>
+    </section>
+    <div class="blog-sidebar">
+      <form id="blog-newsletter-form" class="blog-newsletter-form" action="." method="post">
+        <h2 class="blog-newsletter-title">Suscríbete a nuestro Newsletter</h2>
+        <input class="contact-input" id="blog-email" type="email" name="email" placeholder="Correo electrónico">
+        <div class="form-message"></div>
+        <button class="indots-button blue" type="submit" name="submit">Inscribirme</button>
+        <div class="loader indots-loader">
+          <div class="ball-pulse-sync">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </form>
+      <div class="recent-content-content">
+        <h2 class="recent-content-title">Lo más reciente</h2>
+        <ul class="recent-content-list">
+          <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+          <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+          <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+          <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+          <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+          <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
