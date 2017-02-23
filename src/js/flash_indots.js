@@ -16,7 +16,9 @@
     + '</div>'
     + '<form id="flash-indots-modal-form_' + itemData.index + '" class="flash-indots-modal-form" action="' + formInfo.sendTo + '">'
     + '<div class="inputs-div">'
-    + '<input type="hidden" name="' + formInfo.hiddenName + '">'
+    + '<input type="hidden" name="' + formInfo.campaignName + '" value="' + itemData.campaignToken + '">'
+    + '<input type="hidden" name="' + formInfo.thankName + '" value="' + itemData.thankUrl + '">'
+    + '<input type="hidden" name="' + formInfo.fowardName + '" value="' + itemData.fowardData + '">'
     + '<div class="input-wrapper">'
     + '<input class="contact-input" type="text" id="name-flash-indots_' + itemData.index + '" name="' + formInfo.textName + '" placeholder="Nombre">'
     + '</div>'
@@ -26,7 +28,7 @@
     + '<div class="form-message"></div>'
     + '</div>'
     + '<div class="button-wrapper">'
-    + '<button class="indots-button green" type="submit" name="submit">Inscribirme</button>'
+    + '<button class="indots-button green" type="button" name="submit">Inscribirme</button>'
     + '<div class="loader indots-loader vertical-center">'
     + '<div class="ball-pulse-sync">'
     + '<div class="blue"></div>'
@@ -50,13 +52,18 @@
         duration: $(this).attr('data-item-duration'),
         lessonDuration: $(this).attr('data-item-lesson-duration'),
         price: $(this).attr('data-item-price'),
-        index: index
+        index: index,
+        campaignToken: $(this).attr('data-item-campaign-token'),
+        thankUrl: $(this).attr('data-item-thank-url'),
+        fowardData: $(this).attr('data-item-foward-data')
       },
       formInfo = {
         sendTo: '.',
+        textName: 'name',
         emailName: 'email',
-        hidenName: 'name',
-        textName: 'name'
+        campaignName: 'campaign_token',
+        thankName: 'thankyou_url',
+        fowardName: 'forward_data'
       },
       validationRules = {};
     validationRules[formInfo.emailName] = {
