@@ -1,5 +1,5 @@
 (function () {
-  var mobile = window.matchMedia('(max-width: 876px)');
+  var mobile = window.matchMedia('(max-width: 1064px)');
 
   function detectTouch(e) {
     if (!$(e.target).is('nav .menu-trigger') && !$(e.target).is('nav .menu-container') && !$(e.target).closest('nav .menu-container').length && $('nav .menu-container').hasClass('active')) {
