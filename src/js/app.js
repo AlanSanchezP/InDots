@@ -38,29 +38,34 @@
           formMessage.removeClass(success ? 'error' : 'success');
           formMessage.addClass(success ? 'success' : 'error');
           formMessage.html(message);
-        };
+        },
+        isAJAX = $(form).attr('data-ajax-form');
 
       fields.attr('disabled', 'disabled');
       formMessage.html('');
       if (!$(form).find('.button-wrapper .loader').length) {
         $(form).find('.button-wrapper').addClass('disabled');
       }
-      $.ajax({
-        url: $(form).attr('action'),
-        method: 'POST',
-        data: $form
-      })
-        .done(function (data) {
-          setMessage(parseInt(data) === 1);
-          form.reset();
+      if (typeof isAJAX !== typeof undefined && isAJAX !== false) {
+        $.ajax({
+          url: $(form).attr('action'),
+          method: 'POST',
+          data: $form
         })
-        .fail(function () {
-          setMessage(false);
-        })
-        .always(function () {
-          fields.removeAttr('disabled');
-          $(form).find('.button-wrapper').removeClass('disabled');
-        });
+          .done(function (data) {
+            setMessage(parseInt(data) === 1);
+            form.reset();
+          })
+          .fail(function () {
+            setMessage(false);
+          })
+          .always(function () {
+            fields.removeAttr('disabled');
+            $(form).find('.button-wrapper').removeClass('disabled');
+          });
+      } else {
+        form.submit();
+      }
     }
   });
 })();
