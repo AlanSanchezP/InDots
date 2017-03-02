@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <title>
-Contacto
+Blog
  - InDots</title>
   </head>
   <body>
@@ -30,7 +30,7 @@ Contacto
       <a href="que-es-indots.html" class="menu-link ">Qué es InDots</a>
       <a href="nuestros-cursos.html" class="menu-link ">Nuestros cursos</a>
       <a href="flash-indots.html" class="menu-link flash-indots-icon-title ">Flash InDots</a>
-      <a href="contacto.html" class="menu-link active">Contacto</a>
+      <a href="contacto.html" class="menu-link ">Contacto</a>
       <a href="#" class="menu-link">Blog</a>
       <a href="#" class="menu-link">Iniciar Sesión</a>
     </div>
@@ -39,31 +39,56 @@ Contacto
 
       <main>
         
-<div class="contact-form-section">
-  <h1 class="blue-title">Contacto</h1>
-  <form id="contact-form" class="contact-form" action="." method="post" data-ajax-form>
-    <div class="input-wrapper input">
-      <input id="name" class="contact-input" type="text" name="name" placeholder="Nombre">
-    </div>
-    <div class="input-wrapper input">
-      <input id="email" class="contact-input" type="text" name="email" placeholder="Correo electrónico">
-    </div>
-    <div class="input-wrapper textarea">
-      <textarea id="message" class="contact-input" name="message" placeholder="Mensaje"></textarea>
-    </div>
-    <div class="form-message">
-    </div>
-    <div class="button-wrapper">
-      <button class="indots-button blue" type="submit" name="submit">Enviar</button>
-    </div>
-    <div class="loader indots-loader">
-      <div class="ball-pulse-sync">
-        <div class="blue"></div>
-        <div class="blue"></div>
-        <div class="blue"></div>
+<div class="blog-section">
+  <h1 class="blue-title">Blog</h1>
+  <div class="blog-wrapper">
+    <section class="blog-articles-column">
+      <article class="blog-article">
+        <a href="#"><div class="blog-article-cover"></div></a>
+        <a href="#" class="blog-article-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
+        <span class="blog-article-date">21 de noviembre de 2016</span>
+        <p class="blog-article-excerpt">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea...
+        </p>
+        <a class="blog-article-link go-to-article" href="#">Seguir leyendo</a>
+      </article>
+      <article class="blog-article">
+        <a href="#"><div class="blog-article-cover"></div></a>
+        <a href="#" class="blog-article-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
+        <span class="blog-article-date">21 de noviembre de 2016</span>
+        <p class="blog-article-excerpt">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea...
+        </p>
+        <a class="blog-article-link go-to-article" href="#">Seguir leyendo</a>
+      </article>
+    </section>
+    <div class="blog-sidebar">
+      <form id="blog-newsletter-form" class="blog-newsletter-form" action="." method="post">
+        <h2 class="blog-newsletter-title">Suscríbete a nuestro Newsletter</h2>
+        <input class="contact-input" id="blog-email" type="email" name="email" placeholder="Correo electrónico">
+        <div class="form-message"></div>
+        <button class="indots-button blue" type="submit" name="submit">Inscribirme</button>
+        <div class="loader indots-loader">
+          <div class="ball-pulse-sync">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </form>
+      <div class="recent-content-content">
+        <h2 class="recent-content-title">Lo más reciente</h2>
+        <ul class="recent-content-list">
+          <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+          <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+          <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+          <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+          <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+          <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+        </ul>
       </div>
     </div>
-  </form>
+  </div>
 </div>
 
       </main>
