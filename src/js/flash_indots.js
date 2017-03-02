@@ -14,7 +14,7 @@
     + '<div><span class="flash-indots-green-text">Tiempo</span>' + itemData.lessonDuration + '</div>'
     + '<div><span class="flash-indots-green-text">Precio</span>' + itemData.price + '</div>'
     + '</div>'
-    + '<form id="flash-indots-modal-form_' + itemData.index + '" class="flash-indots-modal-form" action="' + formInfo.sendTo + '">'
+    + '<form id="flash-indots-modal-form_' + itemData.index + '" class="flash-indots-modal-form" action="' + formInfo.sendTo + '" accept-charset="utf-8" method="post">'
     + '<div class="inputs-div">'
     + '<input type="hidden" name="' + formInfo.campaignName + '" value="' + itemData.campaignToken + '">'
     + '<input type="hidden" name="' + formInfo.thankName + '" value="' + itemData.thankUrl + '">'
@@ -28,7 +28,7 @@
     + '<div class="form-message"></div>'
     + '</div>'
     + '<div class="button-wrapper">'
-    + '<button class="indots-button green" type="button" name="submit">Inscribirme</button>'
+    + '<button class="indots-button green" type="submit">Inscribirme</button>'
     + '<div class="loader indots-loader vertical-center">'
     + '<div class="ball-pulse-sync">'
     + '<div class="blue"></div>'
@@ -58,8 +58,8 @@
         fowardData: $(this).attr('data-item-foward-data')
       },
       formInfo = {
-        sendTo: '.',
-        textName: 'name',
+        sendTo: 'https://app.getresponse.com/add_subscriber.html',
+        textName: 'first_name',
         emailName: 'email',
         campaignName: 'campaign_token',
         thankName: 'thankyou_url',
