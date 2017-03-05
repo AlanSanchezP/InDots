@@ -14,7 +14,7 @@
     + '<div><span class="flash-indots-green-text">Tiempo</span>' + itemData.lessonDuration + '</div>'
     + '<div><span class="flash-indots-green-text">Precio</span>' + itemData.price + '</div>'
     + '</div>'
-    + '<form id="flash-indots-modal-form_' + itemData.index + '" class="flash-indots-modal-form" action="' + formInfo.sendTo + '" accept-charset="utf-8" method="post">'
+    + '<form "' + itemData.index + '" class="flash-indots-modal-form" action="' + formInfo.sendTo + '" accept-charset="utf-8" method="post">'
     + '<div class="inputs-div">'
     + '<input type="hidden" name="' + formInfo.campaignName + '" value="' + itemData.campaignToken + '">'
     + '<input type="hidden" name="' + formInfo.thankName + '" value="' + itemData.thankUrl + '">'
