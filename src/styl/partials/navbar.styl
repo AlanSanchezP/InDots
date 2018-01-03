@@ -31,25 +31,56 @@ nav
     height 100%
 
   .menu
+    display flex
+    justify-content flex-end
     height 100%
 
   .menu-link
-    color $darkgray
+    color #434343
     display inline-block
-    font-size remify(18)
+    font-size remify(13)
     vertical-align middle
     simple-border('bottom', 4px, transparent)
     line-height 74px
+    letter-spacing 0.9px
     padding 0 0.7em
+    text-transform uppercase
 
     &:hover, &.active
-      simple-border('bottom', 4px, $blue)
+      /*simple-border('bottom', 4px, $blue)*/
+      color #a7d4ce
+      font-weight bold
 
     &.flash-indots-icon-title::before
       height remify(13)
       width remify(9.2)
       margin-top remify(-2)
       margin-right remify(2.5)
+
+.menu-link-container
+  position relative
+  
+.menu-link-container:hover
+  .diamong
+    display none !important
+ 
+.diamond
+  width 10px
+  height 10px
+  background $indotsGreen
+  display block
+  -webkit-transform rotate(135deg) skew(15deg, 15deg)
+  -moz-transform rotate(135deg) skew(15deg, 15deg)
+  -ms-transform rotate(135deg) skew(15deg, 15deg)
+  -o-transform rotate(135deg) skew(15deg, 15deg)
+  left 0
+  margin 10px auto 0 auto
+  position absolute
+  right 0
+  transform rotate(135deg) skew(15deg, 15deg)
+
+.diamon-no-selected
+  display
 
 @media screen and (max-width: 1064px)
   nav
