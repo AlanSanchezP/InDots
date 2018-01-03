@@ -10,13 +10,34 @@
       <a href="index.html"><img src="img/logo/logo-full-white.png" alt="Logo"></a>
     </div>
     <div class="menu">
-      <a href="index.html" class="menu-link {% if section == 'index' %}active{% endif %}">Inicio</a>
-      <a href="que-es-indots.html" class="menu-link {% if section == 'que-es-indots' %}active{% endif %}">Qué es InDots</a>
-      <a href="nuestros-cursos.html" class="menu-link {% if section == 'nuestros-cursos' %}active{% endif %}">Nuestros cursos</a>
-      <a href="flash-indots.html" class="menu-link flash-indots-icon-title {% if section == 'flash-indots' %}active{% endif %}">Flash InDots</a>
-      <a href="contacto.html" class="menu-link {% if section == 'contacto' %}active{% endif %}">Contacto</a>
-      <a href="#" class="menu-link">Blog</a>
-      <a href="#" class="menu-link">Iniciar Sesión</a>
+      <div class="menu-link-container">
+        {% if section == 'index' %} <div class="diamond"></div> {% endif %}
+        <a href="index.html" class="menu-link indots-font-cabin-regular {% if section == 'index' %}active{% endif %}">Inicio</a>
+      </div>
+      <div  class="menu-link-container">
+        {% if section == 'que-es-indots' %} <div class="diamond"></div> {% endif %}
+        <a href="que-es-indots.html" class="menu-link indots-font-cabin-regular {% if section == 'que-es-indots' %}active{% endif %}">Qué es InDots</a>
+      </div>
+      <div class="menu-link-container">
+        {% if section == 'nuestros-cursos' %} <div class="diamond"></div> {% endif %}
+        <a href="nuestros-cursos.html" class="menu-link indots-font-cabin-regular {% if section == 'nuestros-cursos' %}active{% endif %}">Nuestros cursos</a>
+      </div>
+      <div class="menu-link-container">
+        {% if section == 'flash-indots' %} <div class="diamond"></div> {% endif %}
+        <a href="flash-indots.html" class="menu-link indots-font-cabin-regular {% if section == 'flash-indots' %}active{% endif %}">Videos</a>
+      </div>
+      <div class="menu-link-container">
+        {% if section == 'contacto' %} <div class="diamond"></div> {% endif %}
+        <a href="#" class="menu-link indots-font-cabin-regular">Indots verde</a>
+      </div>
+      <div class="menu-link-container">
+        {% if section == 'blog' %} <div class="diamond"></div> {% endif %}
+        <a href="#" class="menu-link indots-font-cabin-regular">Blog</a>
+      </div>
+      <div class="menu-link-container">
+        {% if section == 'contacto' %} <div class="diamond"></div> {% endif %}
+        <a href="contacto.html" class="menu-link indots-font-cabin-regular{% if section == 'contacto' %}active{% endif %}">Contacto</a>
+      </div>
     </div>
   </div>
 </nav>
