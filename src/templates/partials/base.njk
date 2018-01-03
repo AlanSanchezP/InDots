@@ -8,6 +8,17 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <title>{% if section != 'index' %}{% block title %}{% endblock %} - {% endif %}{{ pageTitle }}</title>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111091215-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-111091215-1');
+    </script>
+
   </head>
   <body>
     <div id="page">
@@ -25,5 +36,7 @@
     <script src="js/{{ projectName }}.js"></script>
     {% block js_inline %}
     {% endblock %}
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a4bb2aca0aeb61c"></script>
   </body>
 </html>

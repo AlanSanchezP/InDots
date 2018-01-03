@@ -1,3 +1,21 @@
+.contact-section
+  background-image url("../img/backgrounds/homepage-bg-4.jpg")
+  background-repeat no-repeat
+  background-position bottom left
+  background-size contain
+  display flex
+  justify-content flex-end
+  margin-right 37px
+
+.contact-form-container
+  background-color #f8f8f8
+  margin-bottom 28px
+  padding 77px 190px 80px 100px
+  width auto
+
+.contact-form-content
+  width 404px
+
 .contact-form-section
   background $btngreen
   center-block()
@@ -6,21 +24,15 @@
   text-align center
 
 .contact-form
-  margin-top remify(50)
-  center-block()
-  max-width 436px
-  width 90%
+  margin-top 50px
 
   .button-wrapper
-    text-align right
-    margin-top remify(25)
+    text-align left
+    margin-top 27px
 
   .input-wrapper
-    margin-top remify(14)
+    margin-top 17px
     font-size remify(17)
-
-    &.input
-      width 70%
 
   .indots-button
     font-size remify(16)
@@ -28,13 +40,54 @@
   .indots-loader .ball-pulse-sync div
     background #00577b
 
-  textarea.contact-input
-    height 180px
+  .contact-input
+    background-color #eeeeee
+    border none
+    color #434343
+    font-size remify(14px)
+    letter-spacing 0.1px
+    padding 0 16px
+
+    &::placeholder
+      color #aaaaaa
+
+  .contact-textarea
+    height 132px
+    padding-top 16px
+  
+  .contact-input-height
+    height 43px
 
 @media screen and (max-width: 480px)
-  .contact-form
-    .button-wrapper
-      text-align center
 
     .input-wrapper.input
       width 100%
+
+@media screen and (min-width 769px) and (max-width 1000px)
+  .contact-form-container
+    padding-left 45px
+    padding-right 65px
+
+@media screen and (min-width 769px) and (max-width 840px)
+  .contact-section
+    background-position -170px
+
+@media screen and (min-width 650px) and (max-width 768px)
+  .contact-section
+    background-position -170px
+
+  .contact-form-container
+    padding-left 45px
+    padding-right 65px
+
+@media screen and (min-width 300px) and (max-width 649px)
+  .contact-section
+    margin 0 20px
+
+  .contact-form-container
+    margin-bottom 170px
+    padding 40px 25px
+    width 100%
+
+  .contact-form-content
+    width 100%

@@ -1,8 +1,28 @@
 footer
-  background $blue
+  background-image url("../img/backgrounds/indots-footer.jpg")
+  background-position center
+  background-repeat no-repeat
+  background-size cover
   color white
   padding-top remify(60)
   padding-bottom remify(65)
+
+.footer-link-anchor
+  outline 0
+  padding 10px 0
+
+.footer-email
+  color #735d72
+  font-size 12px
+
+.footer-social-network-icon
+  height 19px
+  width 19px
+
+.footer-link
+  color #838383
+  font-size remify(12px)
+  letter-spacing 0.9px
 
 .footer-div
   display flex
@@ -13,16 +33,35 @@ footer
   max-width 1026px
   width 90%
 
+.footer-right-column
+  display flex
+  flex-direction row
+
+.footer-section-links-container
+  display flex
+  flex-direction row
+
+.footer-column-content
+  display flex
+  flex-direction column
+  margin-right 60px
+
 .footer-logo
   width remify(210)
 
 .footer-left-column
   flex-basis 290px
 
+.footer-icons-container
+  display flex
+  flex-direction column
+  justify-content center
+
 .footer-copyright-info
   font-size remify(15)
   margin-top 1.25em
   font-weight $normal
+  color #735d72
 
 .footer-green-text
   color $footergreen
@@ -38,8 +77,8 @@ footer
 .footer-divider
   display block
   height 140px
-  background white
-  width 1px
+  background #838383
+  width 2px
   border none
 
 .footer-email-span,
@@ -87,6 +126,19 @@ footer
     flex-basis 100%
     text-align center
 
+  .footer-section-links-container
+    justify-content space-around
+
+  .footer-icons-container
+    flex-direction row
+
+  .footer-icons-container
+    .footer-link-anchor
+      margin 0 10px
+
+  .footer-right-column
+    flex-direction column
+
   #footer-newsletter-form
     center-block()
     width 90%
@@ -98,3 +150,6 @@ footer
     width 60%
     height 1px
     margin remify(50) auto
+
+  .footer-column-content
+    margin-right 0
