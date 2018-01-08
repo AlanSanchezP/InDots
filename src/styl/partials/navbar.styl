@@ -1,69 +1,17 @@
-nav
-  background white
+.site-navbar
+  background-color #fff
+  border-bottom solid 1px $lightergray
   display flex
   align-items center
-  padding 0 remify(40)
-  height 78px
+  height 94px // Change
   left 0
   position fixed
   top 0
   width 100%
   z-index 12
-  simple-border('bottom', 1px, $lightergray)
+  padding 0 36px
+  transition .3s background ease
 
-  .menu-trigger,
-  .mobile-logo-container
-    display none
-
-  .menu-trigger
-    color $blue
-
-  .desktop-logo-container
-    height 63%
-
-    img
-      height 100%
-
-  .menu-container
-    flex-grow 1
-    font-size remify(19)
-    text-align right
-    height 100%
-
-  .menu
-    display flex
-    justify-content flex-end
-    height 100%
-
-  .menu-link
-    color #434343
-    display inline-block
-    font-size remify(13)
-    vertical-align middle
-    simple-border('bottom', 4px, transparent)
-    line-height 74px
-    letter-spacing 0.9px
-    padding 0 0.7em
-    text-transform uppercase
-
-    &:hover, &.active
-      /*simple-border('bottom', 4px, $blue)*/
-      color #a7d4ce
-      font-weight bold
-
-    &.flash-indots-icon-title::before
-      height remify(13)
-      width remify(9.2)
-      margin-top remify(-2)
-      margin-right remify(2.5)
-
-.menu-link-container
-  position relative
-  
-.menu-link-container:hover
-  .diamong
-    display none !important
- 
 .diamond
   width 10px
   height 10px
@@ -77,63 +25,219 @@ nav
   margin 10px auto 0 auto
   position absolute
   right 0
+  top -30px
   transform rotate(135deg) skew(15deg, 15deg)
 
-.diamon-no-selected
-  display
+.menu-link
+  color #434343
+  font-size remify(13)
+  letter-spacing 0.9px
+  text-transform uppercase
+  position relative
 
-@media screen and (max-width: 1064px)
-  nav
+  & span
+    font-weight 600
+
+.menu-link.link-active
+  color #a7d4ce
+  font-weight 900
+
+.menu-link span:hover
+  color #a7d4ce
+  font-weight 900
+
+.site-navbar__mobile-logo-container
+  display none
+
+.site-navbar__desktop-logo-container
+  img
+    height 43px
+    width 135px
+
+.site-navbar__menu-container
+  flex-grow 1
+  text-align right
+  height 100%
+
+.site-navbar__menu
+  height 100%
+  display flex
+  align-items center
+  justify-content flex-end
+
+.site-navbar__menu-link
+  color #434343 // Change
+  font-size remify(12) // Change
+  text-transform uppercase
+  letter-spacing 1.4px
+  cursor pointer
+  margin-left 25px
+
+.site-navbar__menu-link:last-child
+  margin-right 0
+
+@media screen and (max-width: 876px) // Change
+  .site-navbar
     justify-content space-between
-    height 56px
-    padding 0 18px
+    height 56px // Change
+    padding 0 18px // Change
 
-    .mobile-logo-container
-      display block
-      center-block()
-      width 70%
+  .site-navbar__desktop-logo-container
+    img
+      height remify(20) // Change
+      width auto
 
-      img
-        width 100%
+  .site-navbar__mobile-logo-container
+    display block
+    center-block()
+    width 70% // Change
 
-    .menu-trigger
-      display block
-      float right
-      margin 18px 0
-      font-size 18px
+    img
+      width 100%
 
-    .menu-container
-      background $blue
-      height 100vh
-      margin-right 0
-      overflow-y auto
-      position fixed
-      right -280px
-      top 0
-      transition right 0.2s
-      width 280px
-      padding-top 25px
+  .site-navbar__menu-container
+    background white // Change
+    height 100vh
+    margin-right 0
+    overflow-y auto
+    position fixed
+    right -280px
+    top 0
+    transition right 0.2s
+    width 280px
+    padding-top 25px // Change
 
-      &.active
-        right 0
-        box-shadow 0 0 10px $darkgray
+  .site-navbar__menu
+    margin-bottom 30px // Change
+    margin-top 30px // Change
+    text-align left
+    height auto
+    flex-wrap wrap
 
-      .menu
-        margin-top 30px
-        text-align left
-        height auto
+  .site-navbar__menu-link
+    display block
+    height auto
+    display block
+    text-align left
+    flex-basis 100%
+    
+  .navbar-hamburguer-visibilit
+    display none
+    
+@media screen and (max-width 876px)
+  .site-navbar__desktop-logo-container
+    .navbar-logo-mobile
+      height 32px
+      width 100px
+  
+  .site-navbar__desktop-logo-container
+    height 32px
+    width 100px
+      
+  .navbar-hamburguer-visibilit
+    display block
+      
+  .navbar-hamburguer
+    width 33px
+    height 33px
+    border-radius 3px
+    background-color #a1d1ca
+    cursor pointer
+    display flex
+    justify-content center
+    
+  .align-content-hamburguer
+    display flex
+    flex-direction column
+    justify-content center
+    
+  .line-hamburguer-base
+    height 1px
+    background-color #fff
 
-      .menu-link
-        color white
-        display block
-        font-size remify(18)
-        margin-left 0 !important
-        height auto
-        line-height 1
-        padding 1em 2em
-        border none
-        simple-border('left', 4px, transparent)
+  .line-hamburguer-lg
+    width: 15px
+    
+  .line-hamburguer-md
+    width 7.5px
+    
+  .margin-vertical-4px
+    margin 4px 0px
+    
+/*HAMBURGER*/
 
-        &:hover, &:active, &.active
-          background lightness($blue, 30%)
-          simple-border('left', 4px, white)
+.hamburger-menu-container
+  display none
+
+@media screen and (max-width 876px)
+  .hamburger-menu-container
+    background-color #a1d1ca
+    display inline
+    padding-bottom 50px
+    position fixed
+    left 0
+    top 0
+    width 0%
+    z-index 13
+    bottom 0
+    overflow scroll
+    -webkit-transition width 0.5s
+    transition width 0.5s
+    
+  .hamburger-menu-header
+    align-items center
+    display flex
+    flex-direction row
+    justify-content space-between
+    padding 22px 36px
+
+  .hamburger-menu-body
+    display flex
+    flex-direction column
+    margin-left 36px
+    
+  .hamburger-logo
+    height 33px
+    width 102px
+    
+  .hamburger-close-container
+    cursor pointer
+    
+  .hamburger-close
+    height 16px
+    width 16px
+    
+  .hamburger-link-container
+    align-items center
+    display flex
+    flex-direction row
+    margin-bottom 30px
+
+  .hamburger-menu-link
+    color #fff
+    cursor pointer
+    font-size remify(12)
+    letter-spacing 1.4px
+    margin 5px 0
+    padding 10px 0
+    text-transform uppercase
+        
+  .hamburger-text
+    padding 10px 0
+
+  .link-active-mobile span
+    color #735d72
+    font-weight 900
+    
+  .hamburger-text:hover
+    color #735d72
+    font-weight 900
+        
+@media screen and (max-width 1117px)
+  .site-navbar__menu-link
+    font-size remify(11px)
+    
+  .site-navbar__desktop-logo-container
+    img
+      width 8rem
+  

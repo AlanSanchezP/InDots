@@ -97,7 +97,12 @@
   width 272px
 
 .flash-indots-item-photo
-  height 264px
+  height 182px
+
+.flash-indots-cover
+  background-position top
+  background-repeat no-repeat
+  background-size contain
 
 .flash-indots-item-name
   text-align center
@@ -183,6 +188,7 @@
   color $darkgray
   font-weight $heavy
   font-size remify(25)
+  margin-bottom 20px
 
   &::before
     height remify(33)
@@ -252,6 +258,19 @@
     font-size remify(16)
     padding remify(16.5) remify(25)
     margin-top remify(14)
+
+.indots-video-container
+  height 0
+  overflow hidden
+  padding 30px 0 56.25% 0
+  position relative
+
+.indots-video-container iframe
+  left 0
+  height 100%
+  position absolute
+  top 0
+  width 100%
 
 @media screen and (max-width: 1000px)
   .flash-indots-modal-header,
