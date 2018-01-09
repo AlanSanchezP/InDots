@@ -3,11 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:url" content="https://blicklabs.github.io/InDots/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Indots" />
+    <meta property="og:description" content="InDots surge cómo una propuesta para la vida contemporánea: rápida, tecnológica y con necesidad de nuevas formas de conectar. Con nuestras herramientas multimedia encontrarás información y técnicas disponibles para relacionarte con su mundo interno y externo de una forma más eficiente. " />
+    <meta property="og:image" content="https://blicklabs.github.io/InDots/img/backgrounds/homepage-cover.png" />
+    <meta name="keywords" content="indots verde">
     
 
     <link rel="stylesheet" href="css/indots.libs.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link runat="server" rel="shortcut icon" href="/favicon.png" type="image/x-icon"/>
+    <link runat="server" rel="icon" href="/favicon.png" type="image/ico"/>
     <title>
 Videos
  - InDots</title>
@@ -25,46 +32,89 @@ Videos
   </head>
   <body>
     <div id="page">
-      <nav>
-  <div class="desktop-logo-container">
-    <a href="index.html"><img src="img/logo/logo-full.png" alt="Logo"></a>
+      <nav class="site-navbar">
+  <div class="site-navbar__desktop-logo-container">
+    <a href="index.html">
+      <img class="navbar-logo-mobile" src="img/logo/logo-full.png" alt="Logo">
+    </a>
   </div>
-  <div class="menu-trigger">
-    <span class="fa fa-bars"></span>
-  </div>
-  <div class="menu-container">
-    <div class="mobile-logo-container">
-      <a href="index.html"><img src="img/logo/logo-full-white.png" alt="Logo"></a>
+  <div class="site-navbar__menu-container">
+    <div class="site-navbar__mobile-logo-container">
+      <a href="index.html"><img src="img/logo/logo-full.png" alt="Logo"></a>
     </div>
-    <div class="menu">
-      <div class="menu-link-container">
-        
-        <a href="index.html" class="menu-link indots-font-cabin-regular ">Inicio</a>
+    <div class="site-navbar__menu">
+      <a href="index.html" class="site-navbar__menu-link menu-link ">
+        <div class="diamond "></div>
+        <span class="indots-font-cabin-regular">Inicio</span>
+      </a>
+      <a href="que-es-indots.html" class="site-navbar__menu-link menu-link ">
+        <div class="diamond "></div>
+        <span class="indots-font-cabin-regular">Qué es indots</span>
+      </a>
+      <a href="nuestros-cursos.html" class="site-navbar__menu-link menu-link ">
+        <div class="diamond "></div>
+        <span class="indots-font-cabin-regular">Nuestros cursos</span>
+      </a>
+      <a href="flash-indots.html" class="site-navbar__menu-link menu-link link-active">
+        <div class="diamond  show-diamond "></div>
+        <span class="indots-font-cabin-regular">Videos</span>
+      </a>
+      <a href="" class="site-navbar__menu-link menu-link ">
+        <div class="diamond"></div>
+        <span class="indots-font-cabin-regular">Indots verde</span>
+      </a>
+      <a href="http://blog.indots.getmore.mx/" class="site-navbar__menu-link menu-link ">
+        <div class="diamond"></div>
+        <span class="indots-font-cabin-regular">Blog</span>
+      </a>
+      <a href="contacto.html" class="site-navbar__menu-link menu-link ">
+        <div class="diamond "></div>
+        <span class="indots-font-cabin-regular">Contacto</span>
+      </a>
+    </div>
+  </div>
+  <div data-attribute="" class="navbar-hamburguer-visibility"  id="hamburgerMenu">
+    <div class="navbar-hamburguer" data-attribute="">
+      <div class="align-content-hamburguer" data-attribute="">
+        <div class="line-hamburguer-base line-hamburguer-lg" data-attribute=""></div>
+        <div class="line-hamburguer-base line-hamburguer-lg margin-vertical-4px" data-attribute=""></div>
+        <div class="line-hamburguer-base line-hamburguer-lg" data-attribute=""></div>
       </div>
-      <div  class="menu-link-container">
-        
-        <a href="que-es-indots.html" class="menu-link indots-font-cabin-regular ">Qué es InDots</a>
+    </div>
+  </div>
+  <div class="hamburger-menu-container" id="menuContainer" data-attribute="">
+    <div class="hamburger-menu-header" data-attribute="">
+      <div class="" data-attribute="">
+        <a href="index.html" data-attribute="">
+          <img class="hamburger-logo" src="img/logo/logo-full.png" data-attribute="">
+        </a>
       </div>
-      <div class="menu-link-container">
-        
-        <a href="nuestros-cursos.html" class="menu-link indots-font-cabin-regular ">Nuestros cursos</a>
+      <div class="hamburger-close-container" id="hideHamburger">
+        <img class="hamburger-close" src="img/icons/close-menu.png">
       </div>
-      <div class="menu-link-container">
-         <div class="diamond"></div> 
-        <a href="flash-indots.html" class="menu-link indots-font-cabin-regular active">Videos</a>
-      </div>
-      <div class="menu-link-container">
-        
-        <a href="#" class="menu-link indots-font-cabin-regular">Indots verde</a>
-      </div>
-      <div class="menu-link-container">
-        
-        <a href="#" class="menu-link indots-font-cabin-regular">Blog</a>
-      </div>
-      <div class="menu-link-container">
-        
-        <a href="contacto.html" class="menu-link indots-font-cabin-regular">Contacto</a>
-      </div>
+    </div>
+    <div class="hamburger-menu-body" data-attribute="">
+      <a data-attribute="" href="index.html" class="hamburger-menu-link ">
+        <span class="hamburger-text indots-font-cabin-regular">Inicio</span>
+      </a>
+      <a data-attribute="" href="que-es-indots.html" class="hamburger-menu-link ">
+        <span class="hamburger-text indots-font-cabin-regular">Qué es indots</span>
+      </a>
+      <a data-attribute="" href="nuestros-cursos.html" class="hamburger-menu-link ">
+        <span class="hamburger-text indots-font-cabin-regular">Nuestros cursos</span
+      </a>
+      <a data-attribute="" href="flash-indots.html" class="hamburger-menu-link link-active-mobile">
+        <span class="hamburger-text indots-font-cabin-regular">Videos</span>
+      </a>
+      <a data-attribute="" href="" class="hamburger-menu-link ">
+        <span class="hamburger-text indots-font-cabin-regular">Indots verde</span>
+      </a>
+      <a data-attribute="" href="http://blog.indots.getmore.mx/" class="hamburger-menu-link ">
+        <span class="hamburger-text indots-font-cabin-regular">Blog</span>
+      </a>
+      <a data-attribute="" href="contacto.html" class="hamburger-menu-link ">
+        <span class="hamburger-text indots-font-cabin-regular">Contacto</span>
+      </a>
     </div>
   </div>
 </nav>
@@ -72,116 +122,96 @@ Videos
       <main>
         
 <div class="flash-indots flash-indots-section">
-  <h1 class="flash-indots-icon-title blue-title">Videos</h1>
-  <span class="flash-indots-introduction">Cursos sin costo por correo</span>
-  <!--<div class="flash-indots-icons">
-  <div class="flash-indots-icon-item">
-    <img src="img/icons/read.png" alt="Icono" />
-    <span>5 minutos de lectura al día</span>
-  </div>
-  <div class="flash-indots-icon-item">
-    <img src="img/icons/user.png" alt="Icono" />
-    <span>Los expertos a tu alcance</span>
-  </div>
-  <div class="flash-indots-icon-item short">
-    <img src="img/icons/calendar.png" alt="Icono" />
-    <span>5 días de curso</span>
-  </div>
-  <div class="flash-indots-icon-item short">
-    <img src="img/icons/clock.png" alt="Icono" />
-    <span>1 curso a la vez</span>
-  </div>
-</div> -->
-  <span class="flash-indots-instructions">Selecciona el curso que más te llame la atención e inscríbete ¡gratis!</span>
+  <h1 class="flash-indots-icon-title blue-title indots-font-LibreBaskerville-regular">Videos</h1>
   <div class="flash-indots-items">
     <div class="flash-indots-item" data-item-video='<iframe width="560" height="315" src="https://www.youtube.com/embed/BFXJeLm1gpo" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>'>
       <div class="flash-indots-item-photo flash-indots-cover" style="background-image: url(img/thumbnails/se-co-creador.png)"></div>
       <div class="flash-indots-item-name vertical-center">
-        <span>Se Co-creador</span>
+        <span class="indots-font-cabin-regular">Se Co-creador</span>
       </div>
     </div>
     <div class="flash-indots-item" data-item-video='<iframe width="560" height="315" src="https://www.youtube.com/embed/cFRadgwU0z8" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>'>
       <div class="flash-indots-item-photo flash-indots-cover" style="background-image: url(img/thumbnails/somos-uno.png)"></div>
       <div class="flash-indots-item-name vertical-center">
-        <span>Somos Uno</span>
+        <span class="indots-font-cabin-regular">Somos Uno</span>
       </div>
     </div>
     <div class="flash-indots-item" data-item-video='<iframe width="560" height="315" src="https://www.youtube.com/embed/wkAvVzl2rzM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>'>
       <div class="flash-indots-item-photo flash-indots-cover" style="background-image: url(img/thumbnails/confia-en-ti.png)"></div>
       <div class="flash-indots-item-name vertical-center">
-        <span>Confía en ti</span>
+        <span class="indots-font-cabin-regular">Confía en ti</span>
       </div>
     </div>
     <div class="flash-indots-item" data-item-video='<iframe width="560" height="315" src="https://www.youtube.com/embed/ysNN2MEeHLs" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>'>
       <div class="flash-indots-item-photo flash-indots-cover" style="background-image: url(img/thumbnails/despierta-conciencia.png)"></div>
       <div class="flash-indots-item-name vertical-center">
-        <span>Despierta tu conciencia</span>
+        <span class="indots-font-cabin-regular">Despierta tu conciencia</span>
       </div>
     </div>
     <div class="flash-indots-item" data-item-video='<iframe src="https://player.vimeo.com/video/229288813?byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'>
       <div class="flash-indots-item-photo flash-indots-cover" style="background-image: url(img/thumbnails/tres-cerebros.png)"></div>
       <div class="flash-indots-item-name vertical-center">
-        <span>Lo Tres Cerebros</span>
+        <span class="indots-font-cabin-regular">Lo Tres Cerebros</span>
       </div>
     </div>
     <div class="flash-indots-item" data-item-video='<iframe src="https://player.vimeo.com/video/228828674?byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'>
       <div class="flash-indots-item-photo flash-indots-cover" style="background-image: url(img/thumbnails/tipos-pareja.png)"></div>
       <div class="flash-indots-item-name vertical-center">
-        <span>Los tres tipos de pareja - Mariano Barragán</span>
+        <span class="indots-font-cabin-regular">Los tres tipos de pareja - Mariano Barragán</span>
       </div>
     </div>
     <div class="flash-indots-item" data-item-video='<iframe src="https://player.vimeo.com/video/228697393?byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'>
       <div class="flash-indots-item-photo flash-indots-cover" style="background-image: url(img/thumbnails/meditacion-vida-diaria.png)"></div>
       <div class="flash-indots-item-name vertical-center">
-        <span>Meditación para la vida diaria</span>
+        <span class="indots-font-cabin-regular">Meditación para la vida diaria</span>
       </div>
     </div>
     <div class="flash-indots-item" data-item-video='<iframe src="https://player.vimeo.com/video/213748366?byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'>
       <div class="flash-indots-item-photo flash-indots-cover" style="background-image: url(img/thumbnails/curso-meditacion.png)"></div>
       <div class="flash-indots-item-name vertical-center">
-        <span>Video Vivian Toussieh</span>
+        <span class="indots-font-cabin-regular">Video Vivian Toussieh</span>
       </div>
     </div>
     <div class="flash-indots-item" data-item-video='<iframe src="https://player.vimeo.com/video/211391294?byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'>
       <div class="flash-indots-item-photo flash-indots-cover" style="background-image: url(img/thumbnails/curso-meditacion.png)"></div>
       <div class="flash-indots-item-name vertical-center">
-        <span>Curso de meditación para la vida diaria</span>
+        <span class="indots-font-cabin-regular">Curso de meditación para la vida diaria</span>
       </div>
     </div>
     <div class="flash-indots-item" data-item-video='<iframe src="https://player.vimeo.com/video/211758227?byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'>
       <div class="flash-indots-item-photo flash-indots-cover" style="background-image: url(img/thumbnails/mindfulness.png)"></div>
       <div class="flash-indots-item-name vertical-center">
-        <span>Mindfulness</span>
+        <span class="indots-font-cabin-regular">Mindfulness</span>
       </div>
     </div>
     <div class="flash-indots-item" data-item-video='<iframe src="https://player.vimeo.com/video/236810309?byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'>
       <div class="flash-indots-item-photo flash-indots-cover" style="background-image: url(img/thumbnails/indots-verde.png)"></div>
       <div class="flash-indots-item-name vertical-center">
-        <span>Indots Verde</span>
+        <span class="indots-font-cabin-regular">Indots Verde</span>
       </div>
     </div>
     <div class="flash-indots-item" data-item-video='<iframe src="https://player.vimeo.com/video/236809073?byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'>
       <div class="flash-indots-item-photo flash-indots-cover" style="background-image: url(img/thumbnails/campania.png)"></div>
       <div class="flash-indots-item-name vertical-center">
-        <span>Indots Verde Campaña</span>
+        <span class="indots-font-cabin-regular">Indots Verde Campaña</span>
       </div>
     </div>
     <div class="flash-indots-item" data-item-video='<iframe src="https://player.vimeo.com/video/222722541?byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>' data-item-video-second='<iframe src="https://player.vimeo.com/video/222723431?byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>' data-item-video-third='<iframe src="https://player.vimeo.com/video/222724543?byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'>
       <div class="flash-indots-item-photo flash-indots-cover" style="background-image: url(img/thumbnails/clase-meditacion.png)"></div>
       <div class="flash-indots-item-name vertical-center">
-        <span>Clase de meditación (Miriam Hamui)</span>
+        <span class="indots-font-cabin-regular">Clase de meditación (Miriam Hamui)</span>
       </div>
     </div>
     <div class="flash-indots-item" data-item-video='<iframe src="https://player.vimeo.com/video/222721586?byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>' data-item-video-second='<iframe src="https://player.vimeo.com/video/223344974?byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>' data-item-video-third='<iframe src="https://player.vimeo.com/video/223363670?byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'>
       <div class="flash-indots-item-photo flash-indots-cover" style="background-image: url(img/thumbnails/conciencia.png)"></div>
       <div class="flash-indots-item-name vertical-center">
-        <span>Despierta tu Conciencia (Anita Rubinstein)</span>
+        <span class="indots-font-cabin-regular">Despierta tu Conciencia (Anita Rubinstein)</span>
       </div>
     </div>
     <div class="flash-indots-item" data-item-video='<iframe src="https://player.vimeo.com/video/222716691?byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>' data-item-video-second='<iframe src="https://player.vimeo.com/video/222716546?byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>' data-item-video-third='<iframe src="https://player.vimeo.com/video/223531934?byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'>
       <div class="flash-indots-item-photo flash-indots-cover" style="background-image: url(img/thumbnails/vinculo-claridad-pareja.png)"></div>
       <div class="flash-indots-item-name vertical-center">
-        <span>El vínculo y la claridad en la pareja (Mariano Barragán)</span>
+        <span class="indots-font-cabin-regular">El vínculo y la claridad en la pareja (Mariano Barragán)</span>
       </div>
     </div>
   </div>
@@ -218,7 +248,7 @@ Videos
           <a href="" class="footer-link-anchor">
             <span class="footer-link indots-font-cabin-regular">INDOTS VERDE</span>
           </a>
-          <a href="" class="footer-link-anchor">
+          <a href="http://blog.indots.getmore.mx/" class="footer-link-anchor">
             <span class="footer-link indots-font-cabin-regular">BLOG</span>
           </a>
           <a href="contacto.html" class="footer-link-anchor">
@@ -255,5 +285,6 @@ Videos
     
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a4bb2aca0aeb61c"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
   </body>
 </html>

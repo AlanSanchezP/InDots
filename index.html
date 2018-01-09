@@ -3,11 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:url" content="https://blicklabs.github.io/InDots/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Indots" />
+    <meta property="og:description" content="InDots surge cómo una propuesta para la vida contemporánea: rápida, tecnológica y con necesidad de nuevas formas de conectar. Con nuestras herramientas multimedia encontrarás información y técnicas disponibles para relacionarte con su mundo interno y externo de una forma más eficiente. " />
+    <meta property="og:image" content="https://blicklabs.github.io/InDots/img/backgrounds/homepage-cover.png" />
+    <meta name="keywords" content="indots verde">
     
 
     <link rel="stylesheet" href="css/indots.libs.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link runat="server" rel="shortcut icon" href="/favicon.png" type="image/x-icon"/>
+    <link runat="server" rel="icon" href="/favicon.png" type="image/ico"/>
     <title>InDots</title>
     
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -23,46 +30,89 @@
   </head>
   <body>
     <div id="page">
-      <nav>
-  <div class="desktop-logo-container">
-    <a href="index.html"><img src="img/logo/logo-full.png" alt="Logo"></a>
+      <nav class="site-navbar">
+  <div class="site-navbar__desktop-logo-container">
+    <a href="index.html">
+      <img class="navbar-logo-mobile" src="img/logo/logo-full.png" alt="Logo">
+    </a>
   </div>
-  <div class="menu-trigger">
-    <span class="fa fa-bars"></span>
-  </div>
-  <div class="menu-container">
-    <div class="mobile-logo-container">
-      <a href="index.html"><img src="img/logo/logo-full-white.png" alt="Logo"></a>
+  <div class="site-navbar__menu-container">
+    <div class="site-navbar__mobile-logo-container">
+      <a href="index.html"><img src="img/logo/logo-full.png" alt="Logo"></a>
     </div>
-    <div class="menu">
-      <div class="menu-link-container">
-         <div class="diamond"></div> 
-        <a href="index.html" class="menu-link indots-font-cabin-regular active">Inicio</a>
+    <div class="site-navbar__menu">
+      <a href="index.html" class="site-navbar__menu-link menu-link link-active">
+        <div class="diamond  show-diamond "></div>
+        <span class="indots-font-cabin-regular">Inicio</span>
+      </a>
+      <a href="que-es-indots.html" class="site-navbar__menu-link menu-link ">
+        <div class="diamond "></div>
+        <span class="indots-font-cabin-regular">Qué es indots</span>
+      </a>
+      <a href="nuestros-cursos.html" class="site-navbar__menu-link menu-link ">
+        <div class="diamond "></div>
+        <span class="indots-font-cabin-regular">Nuestros cursos</span>
+      </a>
+      <a href="flash-indots.html" class="site-navbar__menu-link menu-link ">
+        <div class="diamond "></div>
+        <span class="indots-font-cabin-regular">Videos</span>
+      </a>
+      <a href="" class="site-navbar__menu-link menu-link ">
+        <div class="diamond"></div>
+        <span class="indots-font-cabin-regular">Indots verde</span>
+      </a>
+      <a href="http://blog.indots.getmore.mx/" class="site-navbar__menu-link menu-link ">
+        <div class="diamond"></div>
+        <span class="indots-font-cabin-regular">Blog</span>
+      </a>
+      <a href="contacto.html" class="site-navbar__menu-link menu-link ">
+        <div class="diamond "></div>
+        <span class="indots-font-cabin-regular">Contacto</span>
+      </a>
+    </div>
+  </div>
+  <div data-attribute="" class="navbar-hamburguer-visibility"  id="hamburgerMenu">
+    <div class="navbar-hamburguer" data-attribute="">
+      <div class="align-content-hamburguer" data-attribute="">
+        <div class="line-hamburguer-base line-hamburguer-lg" data-attribute=""></div>
+        <div class="line-hamburguer-base line-hamburguer-lg margin-vertical-4px" data-attribute=""></div>
+        <div class="line-hamburguer-base line-hamburguer-lg" data-attribute=""></div>
       </div>
-      <div  class="menu-link-container">
-        
-        <a href="que-es-indots.html" class="menu-link indots-font-cabin-regular ">Qué es InDots</a>
+    </div>
+  </div>
+  <div class="hamburger-menu-container" id="menuContainer" data-attribute="">
+    <div class="hamburger-menu-header" data-attribute="">
+      <div class="" data-attribute="">
+        <a href="index.html" data-attribute="">
+          <img class="hamburger-logo" src="img/logo/logo-full.png" data-attribute="">
+        </a>
       </div>
-      <div class="menu-link-container">
-        
-        <a href="nuestros-cursos.html" class="menu-link indots-font-cabin-regular ">Nuestros cursos</a>
+      <div class="hamburger-close-container" id="hideHamburger">
+        <img class="hamburger-close" src="img/icons/close-menu.png">
       </div>
-      <div class="menu-link-container">
-        
-        <a href="flash-indots.html" class="menu-link indots-font-cabin-regular ">Videos</a>
-      </div>
-      <div class="menu-link-container">
-        
-        <a href="#" class="menu-link indots-font-cabin-regular">Indots verde</a>
-      </div>
-      <div class="menu-link-container">
-        
-        <a href="#" class="menu-link indots-font-cabin-regular">Blog</a>
-      </div>
-      <div class="menu-link-container">
-        
-        <a href="contacto.html" class="menu-link indots-font-cabin-regular">Contacto</a>
-      </div>
+    </div>
+    <div class="hamburger-menu-body" data-attribute="">
+      <a data-attribute="" href="index.html" class="hamburger-menu-link link-active-mobile">
+        <span class="hamburger-text indots-font-cabin-regular">Inicio</span>
+      </a>
+      <a data-attribute="" href="que-es-indots.html" class="hamburger-menu-link ">
+        <span class="hamburger-text indots-font-cabin-regular">Qué es indots</span>
+      </a>
+      <a data-attribute="" href="nuestros-cursos.html" class="hamburger-menu-link ">
+        <span class="hamburger-text indots-font-cabin-regular">Nuestros cursos</span
+      </a>
+      <a data-attribute="" href="flash-indots.html" class="hamburger-menu-link ">
+        <span class="hamburger-text indots-font-cabin-regular">Videos</span>
+      </a>
+      <a data-attribute="" href="" class="hamburger-menu-link ">
+        <span class="hamburger-text indots-font-cabin-regular">Indots verde</span>
+      </a>
+      <a data-attribute="" href="http://blog.indots.getmore.mx/" class="hamburger-menu-link ">
+        <span class="hamburger-text indots-font-cabin-regular">Blog</span>
+      </a>
+      <a data-attribute="" href="contacto.html" class="hamburger-menu-link ">
+        <span class="hamburger-text indots-font-cabin-regular">Contacto</span>
+      </a>
     </div>
   </div>
 </nav>
@@ -72,38 +122,43 @@
 <div class="homepage-container">
   <div class="homepage-cover">
     <img class="homepage-cover-img" src="img/backgrounds/homepage-cover.png">
+    <div class="homepage-cover-button-container">
+      <a href="nuestros-cursos.html">
+      <button class="indots-btn-base homepage-cover-button indots-font-cabin-regular">Nuestros cursos</button>
+    </a>
+    </div>
   </div>
 
   <div class="homepage-second-section">
     <div class="homepage-second-section-cards">
-      <a href="">
+      <a href="nuestros-cursos.html">
         <div class="homepage-second-section-card-container">
           <img class="homepage-section-card" src="img/homepage/homepage-section-card-1.png">
         </div>
       </a>
-      <a href="">
+      <a href="flash-indots.html">
         <div class="homepage-second-section-card-container">
           <img class="homepage-section-card" src="img/homepage/homepage-section-card-2.png">
         </div>
       </a>
-      <a href="/magazine.html">
+      <a href="magazine.html">
         <div class="homepage-second-section-card-container">
           <img class="homepage-section-card" src="img/homepage/homepage-section-card-3.png">
         </div>
       </a>
     </div>
     <div class="home-sections-carousel">
-      <a href="">
+      <a href="nuestros-cursos.html">
         <div class="homepage-second-section-card-container">
           <img class="homepage-section-card" src="img/homepage/homepage-section-card-1.png">
         </div>
       </a>
-      <a href="">
+      <a href="flash-indots.html">
         <div class="homepage-second-section-card-container">
           <img class="homepage-section-card" src="img/homepage/homepage-section-card-2.png">
         </div>
       </a>
-      <a href="/magazine.html">
+      <a href="magazine.html">
         <div class="homepage-second-section-card-container">
           <img class="homepage-section-card" src="img/homepage/homepage-section-card-3.png">
         </div>
@@ -148,7 +203,7 @@
 
   <div class="home-gradient home-gradient-logo-section">
     <img src="img/logo/logo.png" alt="Logo" class="gradient-logo" />
-    <div class="home-gradient-items" data-enllax-type="foreground" data-enllax-ratio=".2">
+    <div class="home-gradient-items" data-enllax-type="foreground" data-enllax-ratio=".2" data-enllax-direction="vertical">
       <div class="home-gradient-item">
         <img src="img/homepage/homepage-icon-1.png" alt="Icono" />
         <div class="diamond-purple"></div>
@@ -191,22 +246,22 @@
     </div>
     <div class="homepage-five-section-footer">
       <div class="homepage-five-section-courses-container">
-        <a href="">
+        <a href="https://indots.lpages.co/programa-de-la-nueva-dimension/" target="_blank">
           <img class="homepage-five-section-courses" src="img/homepage/homepage-course-2.jpg">
         </a>
-        <a href="">
+        <a href="https://indots.lpages.co/bundle-de-meditacion/" target="_blank">
           <img class="homepage-five-section-courses course-link-margin" src="img/homepage/homepage-course-1.jpg">
         </a>
       </div>
     </div>
     <div class="homepage-courses-carousel">
         <div>
-          <a href="">
+          <a href="https://indots.lpages.co/bundle-de-meditacion/" target="_blank">
             <img class="homepage-five-section-courses" src="img/homepage/homepage-course-2.jpg">
           </a>
         </div>
         <div>
-          <a href="">
+          <a href="https://indots.lpages.co/bundle-de-meditacion/" target="_blank">
             <img class="homepage-five-section-courses" src="img/homepage/homepage-course-1.jpg">
           </a>
         </div>
@@ -217,11 +272,19 @@
     <div class="homepage-six-section-content">
       <img class="homepage-form-img" src="img/homepage/homepage-form-img.png">
       <div class="homepage-form-container">
-        <form class="hoepage-form-content">
-          <input class="indots-input-base indots-font-cabin-regular" type="text" name="name" placeholder="Nombre completo">
-          <input class="indots-input-base indots-font-cabin-regular" type="email" name="email" placeholder="Correo electrónico">
+        <form class="homepage-form-content" id="newsletter-form" method="post" action="https://api.getresponse.com/v3/raul_804369">
+          <div style="margin-bottom: 15px; max-width: 335px;">
+            <p class="homepage-five-section-description indots-font-cabin-regular no-margin-text">Suscríbete al Newsletter para recibir nuestra revista mensual</p>
+          </div>
+          <div style="display: flex; flex-direction: column-reverse;">
+            <input class="indots-input-base indots-font-cabin-regular" type="text" name="name" placeholder="Nombre completo" required>
+          </div>
+          <div style="display: flex; flex-direction: column-reverse;">
+            <input class="indots-input-base indots-font-cabin-regular" type="email" name="email" placeholder="Correo electrónico" required>
+          </div>
+          <div class="news-letter-form"></div>
           <div>
-            <input class="indots-btn-base" type="submit" name="" value="Suscribirme">
+            <input class="indots-btn-base" type="submit" name="" value="Suscribirme" required>
           </div>
         </form>
       </div>
@@ -260,7 +323,7 @@
           <a href="" class="footer-link-anchor">
             <span class="footer-link indots-font-cabin-regular">INDOTS VERDE</span>
           </a>
-          <a href="" class="footer-link-anchor">
+          <a href="http://blog.indots.getmore.mx/" class="footer-link-anchor">
             <span class="footer-link indots-font-cabin-regular">BLOG</span>
           </a>
           <a href="contacto.html" class="footer-link-anchor">
@@ -305,5 +368,6 @@
 
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a4bb2aca0aeb61c"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
   </body>
 </html>
