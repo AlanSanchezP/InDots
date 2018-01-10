@@ -2,11 +2,16 @@
 
 {% block meta %}
 {% endblock %}
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 {% block content %}
 <div class="homepage-container">
   <div class="homepage-cover">
     <img class="homepage-cover-img" src="img/backgrounds/homepage-cover.png">
+    <div class="homepage-cover-button-container">
+      <a href="nuestros-cursos.html">
+      <button class="indots-btn-base homepage-cover-button indots-font-cabin-regular">Nuestros cursos</button>
+    </a>
+    </div>
   </div>
 
   <div class="homepage-second-section">
@@ -83,7 +88,7 @@
 
   <div class="home-gradient home-gradient-logo-section">
     <img src="img/logo/logo.png" alt="Logo" class="gradient-logo" />
-    <div class="home-gradient-items" data-enllax-type="foreground" data-enllax-ratio=".2">
+    <div class="home-gradient-items" data-enllax-type="foreground" data-enllax-ratio=".2" data-enllax-direction="vertical">
       <div class="home-gradient-item">
         <img src="img/homepage/homepage-icon-1.png" alt="Icono" />
         <div class="diamond-purple"></div>
@@ -126,22 +131,22 @@
     </div>
     <div class="homepage-five-section-footer">
       <div class="homepage-five-section-courses-container">
-        <a href="">
+        <a href="https://indots.lpages.co/programa-de-la-nueva-dimension/" target="_blank">
           <img class="homepage-five-section-courses" src="img/homepage/homepage-course-2.jpg">
         </a>
-        <a href="">
+        <a href="https://indots.lpages.co/bundle-de-meditacion/" target="_blank">
           <img class="homepage-five-section-courses course-link-margin" src="img/homepage/homepage-course-1.jpg">
         </a>
       </div>
     </div>
     <div class="homepage-courses-carousel">
         <div>
-          <a href="">
+          <a href="https://indots.lpages.co/bundle-de-meditacion/" target="_blank">
             <img class="homepage-five-section-courses" src="img/homepage/homepage-course-2.jpg">
           </a>
         </div>
         <div>
-          <a href="">
+          <a href="https://indots.lpages.co/bundle-de-meditacion/" target="_blank">
             <img class="homepage-five-section-courses" src="img/homepage/homepage-course-1.jpg">
           </a>
         </div>
@@ -152,11 +157,42 @@
     <div class="homepage-six-section-content">
       <img class="homepage-form-img" src="img/homepage/homepage-form-img.png">
       <div class="homepage-form-container">
-        <form class="hoepage-form-content">
-          <input class="indots-input-base indots-font-cabin-regular" type="text" name="name" placeholder="Nombre completo">
-          <input class="indots-input-base indots-font-cabin-regular" type="email" name="email" placeholder="Correo electrónico">
+        <div class="homepage-form-content" id="newsletter-form">
+          <div style="margin-bottom: 15px; max-width: 335px;">
+            <p class="homepage-five-section-description indots-font-cabin-regular no-margin-text">Suscríbete al Newsletter para recibir nuestra revista mensual</p>
+          </div>
+          <div style="display: flex; flex-direction: column-reverse;">
+            <input class="indots-input-base indots-font-cabin-regular" type="text" name="name" placeholder="Nombre completo" required>
+          </div>
+          <div style="display: flex; flex-direction: column-reverse;">
+            <input class="indots-input-base indots-font-cabin-regular" type="email" name="email" placeholder="Correo electrónico" required>
+          </div>
+          <div class="newsletter-form"></div>
           <div>
-            <input class="indots-btn-base" type="submit" name="" value="Suscribirme">
+            <input class="indots-btn-base" type="submit" name="" value="Suscribirme" id="ejemploData" required>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="homepage-six-section-mobile">
+    <div class="homepage-six-section-content">
+      <img class="homepage-form-img" src="img/homepage/newsletter-mobile.png">
+      <div class="homepage-form-container">
+        <form class="homepage-form-content" id="newsletter-form" method="post" action="https://api.getresponse.com/v3/contacts">
+          <div style="margin-bottom: 15px; max-width: 335px;">
+            <p class="homepage-newsletter-text indots-font-cabin-regular no-margin-text">Suscríbete al Newsletter para recibir nuestra revista mensual</p>
+          </div>
+          <div style="display: flex; flex-direction: column-reverse;">
+            <input class="indots-input-base indots-font-cabin-regular" type="text" name="name" placeholder="Nombre completo" required>
+          </div>
+          <div style="display: flex; flex-direction: column-reverse;">
+            <input class="indots-input-base indots-font-cabin-regular" type="email" name="email" placeholder="Correo electrónico" required>
+          </div>
+          <div class="newsletter-form"></div>
+          <div class="newsletter-button-container">
+            <input class="indots-btn-base newsletter-button" type="submit" name="" value="Suscribirme" required>
           </div>
         </form>
       </div>

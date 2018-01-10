@@ -16,17 +16,26 @@
   width 10px
   height 10px
   background $indotsGreen
-  display block
   -webkit-transform rotate(135deg) skew(15deg, 15deg)
   -moz-transform rotate(135deg) skew(15deg, 15deg)
   -ms-transform rotate(135deg) skew(15deg, 15deg)
   -o-transform rotate(135deg) skew(15deg, 15deg)
   left 0
   margin 10px auto 0 auto
+  opacity 0
   position absolute
   right 0
   top -30px
+  transition all 0.3s
   transform rotate(135deg) skew(15deg, 15deg)
+
+a:hover
+  .diamond
+    opacity 1
+    transition all 0.3s
+
+.show-diamond
+  opacity 1
 
 .menu-link
   color #434343
@@ -34,9 +43,11 @@
   letter-spacing 0.9px
   text-transform uppercase
   position relative
+  transition all 0.3s
 
   & span
     font-weight 600
+    transition all 0.3s
 
 .menu-link.link-active
   color #a7d4ce
@@ -45,6 +56,7 @@
 .menu-link span:hover
   color #a7d4ce
   font-weight 900
+  transition all 0.3s
 
 .site-navbar__mobile-logo-container
   display none

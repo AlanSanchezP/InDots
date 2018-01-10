@@ -7,11 +7,19 @@
     + '<div class="flash-indots-modal-item-photo cover" style="background-image: ' + itemData.cover + '"></div>'
     + '<div class="flash-indots-modal-item-data">'
     + '<h3 class="flash-indots-modal-item-title flash-indots-icon-title indots-font-cabin-regular">' + itemData.title + '</h3>'
-    + '<div class="indots-video-container">' + itemData.video + '</div>'
-    + '<div class="indots-video-container">' + itemData.videoSecondPart + '</div>'
-    + '<div class="indots-video-container">' + itemData.videoThirdPart + '</div>'
-    + '</div>'
+    + '<div class="indots-video-container">' + itemData.video + '</div>';
+    
+    if(itemData.videoSecondPart) {
+      htmlCode += '<div class="indots-video-container">' + itemData.videoSecondPart + '</div>';
+    }
+
+    if(itemData.videoThirdPart) {
+      htmlCode += '<div class="indots-video-container">' + itemData.videoThirdPart + '</div>';
+    }
+    
+    htmlCode += '</div>'
     + '</div>';
+
     return htmlCode;
   }
 
@@ -19,11 +27,20 @@
     var itemData = {
         cover: $(this).find('.flash-indots-item-photo').css('background-image').replace('\"', '\''),
         title: $(this).find('.flash-indots-item-name span').text(),
-        video: $(this).attr('data-item-video'),
-        videoSecondPart: $(this).attr('data-item-video-second'),
-        videoThirdPart: $(this).attr('data-item-video-third'),
-      },
-      formInfo = {
+        video: $(this).attr('data-item-video')
+      };
+      var videoSecondPartAttr= $(this).attr('data-item-video-second');
+      var videoThirdPartAttr= $(this).attr('data-item-video-third');
+
+      if(videoSecondPartAttr) {
+        itemData.videoSecondPart = videoSecondPartAttr;
+      }
+
+      if(videoThirdPartAttr) {
+        itemData.videoThirdPart = videoThirdPartAttr;
+      }      
+
+      var formInfo = {
         sendTo: 'https://app.getresponse.com/add_subscriber.html',
         textName: 'first_name',
         emailName: 'email',
