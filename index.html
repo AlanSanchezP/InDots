@@ -57,7 +57,7 @@
         <div class="diamond "></div>
         <span class="indots-font-cabin-regular">Videos</span>
       </a>
-      <a href="" class="site-navbar__menu-link menu-link ">
+      <a href="https://indotsverde.com" class="site-navbar__menu-link menu-link ">
         <div class="diamond"></div>
         <span class="indots-font-cabin-regular">Indots verde</span>
       </a>
@@ -104,7 +104,7 @@
       <a data-attribute="" href="flash-indots.html" class="hamburger-menu-link ">
         <span class="hamburger-text indots-font-cabin-regular">Videos</span>
       </a>
-      <a data-attribute="" href="" class="hamburger-menu-link ">
+      <a data-attribute="" href="http://indotsverde.com" class="hamburger-menu-link ">
         <span class="hamburger-text indots-font-cabin-regular">Indots verde</span>
       </a>
       <a data-attribute="" href="http://blog.indots.getmore.mx/" class="hamburger-menu-link ">
@@ -272,7 +272,7 @@
     <div class="homepage-six-section-content">
       <img class="homepage-form-img" src="img/homepage/homepage-form-img.png">
       <div class="homepage-form-container">
-        <form class="homepage-form-content" id="newsletter-form" method="post" action="https://api.getresponse.com/v3/raul_804369">
+        <div class="homepage-form-content" id="newsletter-form">
           <div style="margin-bottom: 15px; max-width: 335px;">
             <p class="homepage-five-section-description indots-font-cabin-regular no-margin-text">Suscríbete al Newsletter para recibir nuestra revista mensual</p>
           </div>
@@ -282,9 +282,32 @@
           <div style="display: flex; flex-direction: column-reverse;">
             <input class="indots-input-base indots-font-cabin-regular" type="email" name="email" placeholder="Correo electrónico" required>
           </div>
-          <div class="news-letter-form"></div>
+          <div class="newsletter-form"></div>
           <div>
-            <input class="indots-btn-base" type="submit" name="" value="Suscribirme" required>
+            <input class="indots-btn-base" type="submit" name="" value="Suscribirme" id="ejemploData" required>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="homepage-six-section-mobile">
+    <div class="homepage-six-section-content">
+      <img class="homepage-form-img" src="img/homepage/newsletter-mobile.png">
+      <div class="homepage-form-container">
+        <form class="homepage-form-content" id="newsletter-form" method="post" action="https://api.getresponse.com/v3/contacts">
+          <div style="margin-bottom: 15px; max-width: 335px;">
+            <p class="homepage-newsletter-text indots-font-cabin-regular no-margin-text">Suscríbete al Newsletter para recibir nuestra revista mensual</p>
+          </div>
+          <div style="display: flex; flex-direction: column-reverse;">
+            <input class="indots-input-base indots-font-cabin-regular" type="text" name="name" placeholder="Nombre completo" required>
+          </div>
+          <div style="display: flex; flex-direction: column-reverse;">
+            <input class="indots-input-base indots-font-cabin-regular" type="email" name="email" placeholder="Correo electrónico" required>
+          </div>
+          <div class="newsletter-form"></div>
+          <div class="newsletter-button-container">
+            <input class="indots-btn-base newsletter-button" type="submit" name="" value="Suscribirme" required>
           </div>
         </form>
       </div>
@@ -320,7 +343,7 @@
           </a>
         </div>
         <div class="footer-column-content">
-          <a href="" class="footer-link-anchor">
+          <a href="http://indotsverde.com" class="footer-link-anchor">
             <span class="footer-link indots-font-cabin-regular">INDOTS VERDE</span>
           </a>
           <a href="http://blog.indots.getmore.mx/" class="footer-link-anchor">
@@ -329,7 +352,7 @@
           <a href="contacto.html" class="footer-link-anchor">
             <span class="footer-link indots-font-cabin-regular" style="">CONTACTO</span>
           </a>
-          <a href="" class="footer-link-anchor">
+          <a href="mailto: contacto@indots.com" class="footer-link-anchor">
             <span class="footer-email indots-font-cabin-regular">contacto@indots.com</span>
           </a>
         </div>
@@ -368,6 +391,5 @@
 
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a4bb2aca0aeb61c"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
   </body>
 </html>
