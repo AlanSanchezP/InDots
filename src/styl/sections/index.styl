@@ -272,11 +272,25 @@
 .homepage-cover
   height auto
   padding-left 20%
+  position relative
   width 100%
 
 .homepage-cover-img
   height 100%
   width 100%
+
+.homepage-cover-button-container
+  position absolute
+  right 37.7%
+  top 57%
+
+.homepage-cover-button
+  background-color #4d374d
+  color #fff
+
+.homepage-cover-button:hover
+  background-color transparent
+  color #4d374d
 
 /*Second section*/
 
@@ -291,7 +305,7 @@
 
 .homepage-second-section-cards
   display flex
-  left 19px
+  left 60px
   position absolute
   top 89px
 
@@ -333,10 +347,9 @@
   margin 35px 0
 
 .homepage-third-section-decorator
-  background-color $indotsGreen
+  border-left solid 3px $indotsGreen
   height auto
   margin 0 22px 0 27px
-  width 3px
 
 /*Fourth section*/
 
@@ -405,10 +418,16 @@
   height auto
   width 100%
 
+.homepage-newsletter-text
+  font-size remify(18px)
+  letter-spacing 0.9px
+  line-height 32px
+
 .homepage-form-container
-  bottom 120px
+  bottom 0
   left 37%
   position absolute
+  top 40px
 
 .homepage-form-tag
   display flex
@@ -417,7 +436,7 @@
 .indots-input-base
   background-color #e9e9e9
   border none
-  color #434343
+  color #aaaaaa
   font-size remify(14px)
   height 43px
   padding 0 16px
@@ -433,13 +452,25 @@
 .homepage-courses-carousel
   display none
 
+.homepage-section-card:hover
+  transform scale(0.9)
+  transition all 0.3s
+
+.homepage-section-card
+  transition all 0.3s
+
+.homepage-six-section-mobile
+  display none
+
 @media screen and (max-width 768px)
 
   .homepage-container
-    margin 0 25px
+    margin 0
 
-  .homepage-cover
-    padding-left 0
+  .homepage-cover,
+  .homepage-five-section,
+  .homepage-six-section
+    padding 0 25px
 
   .homepage-third-section
     flex-direction column
@@ -447,6 +478,10 @@
   .homepage-second-section-cards,
   .homepage-five-section-courses-container
     display none
+
+  .homepage-five-section-courses
+    height 273px
+    width 230px
 
   .home-sections-carousel
     display block
@@ -463,27 +498,33 @@
 
   .homepage-five-section-footer
     background-position left
+    margin-top 70px
+
+  .homepage-six-section
+    display none
+
+  .homepage-newsletter-text
+    line-height 20px
 
   .homepage-form-container
-    margin-top 30px
-    position initial
+    left 10px
+    right 10px
+    top 10px
 
   .homepage-form-container
     .indots-input-base
       width 100%
 
-  /*
-  .home-sections-carousel
-    .slick-slide
-      visibility hidden
-  
-  .home-sections-carousel
-    .slick-current
-      visibility visible
-  */
+  .newsletter-button-container
+    display flex
+    justify-content flex-end
+
+  .newsletter-button
+    margin-top 3px
 
   .homepage-courses-carousel
     display block
+    margin-top -200px
     
   .homepage-courses-carousel
     .slick-slide
@@ -492,3 +533,23 @@
   .homepage-courses-carousel
     .slick-current
       display block
+
+  .homepage-six-section-mobile
+    display block
+    margin 100px 0 50px 0
+
+@media screen and (min-width 769px) and (max-width 970px)
+  .homepage-five-section-content
+    height 510px
+
+@media screen and (min-width 769px) and (max-width 840px)
+  .homepage-second-section-card-container,
+    .homepage-section-card
+      height 190px
+      width 200px
+
+  .homepage-second-section-cards
+    left 0
+    margin 0 auto
+    right 0
+    width 595px
