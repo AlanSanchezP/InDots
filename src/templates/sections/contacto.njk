@@ -12,18 +12,19 @@ Contacto
   <div class="contact-form-container">
     <div class="contact-form-content">
       <h1 class="indots-title indots-font-LibreBaskerville-regular">Contacto</h1>
-      <form id="contact-form" class="contact-form" action="." method="post" data-ajax-form>
-        <div class="input-wrapper input">
-          <input id="name" class="contact-input contact-input-height indots-font-cabin-regular" type="text" name="name" placeholder="Nombre completo">
+      <form id="indots-contact-form" class="contact-form" action="" method="post">
+        <div class="input-wrapper input contact-input-container">
+          <input id="name" class="contact-input contact-input-height indots-font-cabin-regular" type="text" name="contactname" placeholder="Nombre completo" required>
         </div>
-        <div class="input-wrapper input">
-          <input id="email" class="contact-input contact-input-height indots-font-cabin-regular" type="text" name="email" placeholder="Correo electrónico">
+        <div class="input-wrapper input contact-input-container">
+          <input id="email" class="contact-input contact-input-height indots-font-cabin-regular" type="text" name="contactemail" placeholder="Correo electrónico" required>
         </div>
-        <div class="input-wrapper textarea">
-          <textarea id="message" class="contact-input contact-textarea indots-font-cabin-regular" name="message" placeholder="Mensaje"></textarea>
+        <div class="input-wrapper textarea contact-input-container">
+          <textarea id="message" class="contact-input contact-textarea indots-font-cabin-regular" name="contactmessage" placeholder="Mensaje" required></textarea>
         </div>
         <div class="form-message">
         </div>
+        <div class="indots-contact-form"></div>
         <div class="button-wrapper">
           <button class="indots-btn-base indots-font-cabin-regular" type="submit" name="submit" style="margin-top: 0;">Enviar</button>
         </div>
