@@ -3,10 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:url" content="https://blicklabs.github.io/InDots/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Indots" />
+    <meta property="og:description" content="InDots surge cómo una propuesta para la vida contemporánea: rápida, tecnológica y con necesidad de nuevas formas de conectar. Con nuestras herramientas multimedia encontrarás información y técnicas disponibles para relacionarte con su mundo interno y externo de una forma más eficiente. " />
+    <meta property="og:image" content="https://blicklabs.github.io/InDots/img/backgrounds/homepage-cover.png" />
+    <meta name="keywords" content="indots verde">
     {% block meta %}{% endblock %}
     <link rel="stylesheet" href="css/{{ projectName }}.libs.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link runat="server" rel="shortcut icon" href="/favicon.png" type="image/x-icon"/>
+    <link runat="server" rel="icon" href="/favicon.png" type="image/ico"/>
     <title>{% if section != 'index' %}{% block title %}{% endblock %} - {% endif %}{{ pageTitle }}</title>
     
     <!-- Global site tag (gtag.js) - Google Analytics -->
