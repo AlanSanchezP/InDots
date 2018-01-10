@@ -1,37 +1,3 @@
-(function() {
-  document.querySelector('#ejemploData').addEventListener('click', function () {
-    console.log('AAAAAAAAAAAA');
-      var user = {},
-      dataFormInformation = new FormData();
-      user.name = $(".homepage-six-section > div:nth-child(1) > div:nth-child(2) > form:nth-child(1) > div:nth-child(2) > input:nth-child(1)").val();
-      user.email = $(".homepage-six-section > div:nth-child(1) > div:nth-child(2) > form:nth-child(1) > div:nth-child(3) > input:nth-child(1)").val();
-      //dataFormInformation.append('campaign', JSON.stringify({campaignId: "Xj9OK"}));
-      var settings = {
-          "async": true,
-          "crossDomain": true,
-          "url": "https://api.getresponse.com/v3/contacts",
-          "method": "POST",
-          "headers": {
-            "X-Auth-Token": "api-key 4ab319582cc0cb75b8c45800f85c7d6b",
-            "Content-Type": "application/json",
-            "withCredentials": true
-          },
-          "processData": false,
-          "data": {
-            "name": user.name,
-            "email": user.email,
-            "campaign": {
-              "campaignId": "427bR"
-            }
-          }
-        }
-
-          $.ajax(settings).done(function (response) {
-          console.log(response);
-          });
-  });
-})();
-
 (function () {
   $.validator.setDefaults({
     invalidHandler: function (event, validator) {
