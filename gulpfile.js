@@ -10,7 +10,8 @@ gulp.task('build', [
   'build:scripts',
   'copy:fonts',
   'copy:images',
-  'build:html'
+  'build:html',
+  'copy:nginx'
 ]);
 
 gulp.task('watch', function () {
