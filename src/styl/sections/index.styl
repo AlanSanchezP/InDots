@@ -279,6 +279,9 @@
   height 100%
   width 100%
 
+.homepage-cover-img-mobile
+  display none
+
 .homepage-cover-button-container
   position absolute
   right 37.7%
@@ -390,7 +393,7 @@
   background-position center
   background-repeat no-repeat
   background-size cover
-  height 128px
+  height 190px
   position relative
 
 .homepage-five-section-courses-container
@@ -404,6 +407,7 @@
 
 .course-link-margin
   margin-bottom 105px
+  margin-left 29px
 
 /*Six section*/
 
@@ -420,14 +424,14 @@
 
 .homepage-newsletter-text
   font-size remify(18px)
-  letter-spacing 0.9px
+  letter-spacing 1.1px
   line-height 32px
 
 .homepage-form-container
   bottom 0
-  left 37%
+  left 45%
   position absolute
-  top 40px
+  top 15%
 
 .homepage-form-tag
   display flex
@@ -467,9 +471,29 @@
   .homepage-container
     margin 0
 
-  .homepage-cover,
+  .homepage-cover
+    padding 0 0 0 20px
+
+  .homepage-cover-img
+    display none
+
+  .homepage-cover-img-mobile
+    display block
+    height 100%
+    width 100%
+
+  .homepage-cover-button-container
+    right 9%
+
+  .homepage-cover-button
+    font-size remify(11px)
+    height 35px
+    margin-top 15px
+    padding 0 20px
+
   .homepage-five-section,
-  .homepage-six-section
+  .homepage-six-section,
+  .homepage-six-section-mobile
     padding 0 25px
 
   .homepage-third-section
@@ -498,12 +522,15 @@
 
   .homepage-five-section-footer
     background-position left
+    height 128px
     margin-top 70px
 
   .homepage-six-section
     display none
 
   .homepage-newsletter-text
+    font-size remify(18px)
+    letter-spacing 0.9px
     line-height 20px
 
   .homepage-form-container
