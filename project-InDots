@@ -5,7 +5,7 @@ server {
   root /home/static/InDots;
   index index.html index.htm;
 
-  server_name sandbox.indots.getmore.mx www.sandbox.indots.getmore.mx;
+  server_name sandbox.indots.getmore.mx www.sandbox.indots.getmore.mx indots.getmore.mx www.indots.getmore.mx indots.com www.indots.com;
 
   location / {
       try_files $uri $uri/ =404;
