@@ -100,7 +100,6 @@
       carousel.slick('setPosition');
     });
      $(document).on('closed', '[data-remodal-id="flash-indots-modal"]', function () {
-      console.log("Even closed");
       modal.destroy();
     });
   }
