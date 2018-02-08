@@ -99,15 +99,18 @@
     $(document).on('opened', '[data-remodal-id="flash-indots-modal"]', function () {
       carousel.slick('setPosition');
     });
+     $(document).on('closed', '[data-remodal-id="flash-indots-modal"]', function () {
+      modal.destroy();
+    });
   }
 
   function onClick() {
+    createModal();
     carousel.on('afterChange.slick', carouselCallback);
     carousel.slick('slickGoTo', $(this).index());
   }
 
   if ($('.flash-indots-items').length) {
-    createModal();
     $('.flash-indots-items').on('click', '.flash-indots-item', onClick);
   }
 })();
